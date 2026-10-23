@@ -182,7 +182,7 @@ class ConfigurationTests(unittest.TestCase):
 class DocumentationTests(unittest.TestCase):
     def test_documentation_has_required_paths_and_security_note(self):
         readme = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
-        agement = (PROJECT_ROOT / "agement.md").read_text(encoding="utf-8")
+        agement = (PROJECT_ROOT / "management.md").read_text(encoding="utf-8")
         self.assertIn("BTCUSDT", readme)
         self.assertIn("XRPUSDT", readme)
         self.assertIn("不使用", readme)

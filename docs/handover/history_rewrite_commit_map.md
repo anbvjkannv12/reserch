@@ -2,6 +2,8 @@
 
 > 2026-09-30：依原作者決定，從 git 歷史中移除 3 年資料階段的所有檔案（使用 git-filter-repo）。commit 的作者、時間與訊息不變，只有 commit 編號改變。下表列出舊編號與新編號的對應，供對照舊文件或舊紀錄中引用的 commit 編號。預先登記文件（`docs/superpowers/`）定案後不修改，其中引用的是舊編號，請用本表對照。
 
+> 2026-10-24：根目錄 `agement.md` 改名為 `management.md`。預先登記文件與 `logs/` 舊紀錄中的 `agement.md` 指的就是它。
+
 | 舊編號 | 新編號 | 日期與訊息 |
 |---|---|---|
 | `11e4cdf` | `a39a53c` | 2026-09-28 docs: preregister retrain frequency experiment |

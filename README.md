@@ -6,8 +6,9 @@
 
 1. **先讀 [交接使用說明.md](交接使用說明.md)**：怎麼取得資料、建立環境、確認一切正常，以及日常操作。
 2. **再讀 [docs/handover/handover.md](docs/handover/handover.md)**：專案現況、所有檔案在哪裡、剩下的工作、一定要遵守的規則。
-3. **資料不在 GitHub 上**：`data/`、`logs/`、`models/live/` 在另外提供的資料壓縮檔 `專題_資料_2026-09-30.zip`。只 clone 的話看不到任何實驗結果。
-4. 研究範圍的權威文件是 [agement.md](agement.md)。本階段**不含**穩定幣脫鉤預警、市場連動分析與風險分數設計（屬後續延伸）。
+3. **大部分資料不在 GitHub 上**：`data/`、`models/live/` 與 `logs/` 裡的逐列預測／原始 log 在另外提供的資料壓縮檔 `專題_資料_2026-09-30.zip`。`logs/` 的實驗結果 JSON（約 5 MB）已放進 GitHub，看數字不用解壓；重跑或驗證程式仍需要壓縮檔。
+4. 研究範圍的權威文件是 [management.md](management.md)。本階段**不含**穩定幣脫鉤預警、市場連動分析與風險分數設計（屬後續延伸）。
+5. **修改總審報告**：報告在 [docs/report/總審報告_修訂版.docx](docs/report/總審報告_修訂版.docx)，待辦與「章節 → 參考資料」對照見 [docs/report/總審修訂清單.md](docs/report/總審修訂清單.md)。第三章與第五章由組員負責，資料不在本 repo。
 
 ## 目前結果（誠實現況）
 
@@ -76,7 +77,7 @@ $py = ".\.venv-transformer\Scripts\python.exe"
 
 設定集中在 [config.json](config.json)：四個交易對、`1h` 週期、5 年、分頁 1000 筆、重試 5 次。
 
-**資料契約**：53 個特徵欄位（順序固定），標籤 `future_log_return = log(close[t+h] / close[t])`、`target_up = future_log_return > 0`，支援 `1h`／`4h`／`12h`／`24h`。`is_imputed` 只是補值追蹤欄，**不是模型特徵**。缺口佔比約 0.016%，補值規則見 [agement.md](agement.md)。
+**資料契約**：53 個特徵欄位（順序固定），標籤 `future_log_return = log(close[t+h] / close[t])`、`target_up = future_log_return > 0`，支援 `1h`／`4h`／`12h`／`24h`。`is_imputed` 只是補值追蹤欄，**不是模型特徵**。缺口佔比約 0.016%，補值規則見 [management.md](management.md)。
 
 **外部訊號（選配）**：鏈上指標、市場情緒（Fear & Greed）與衍生品（資金費率、未平倉量、多空比）已可接入，全部使用免金鑰公開來源，日頻資料加 1 天發布延遲、一律 backward 對齊。限制與指令見 [external_signals.md](docs/data_features/external_signals.md)。
 
@@ -86,7 +87,7 @@ $py = ".\.venv-transformer\Scripts\python.exe"
 
 ```
 交接使用說明.md       交接後的第一份文件：怎麼開始、怎麼操作
-agement.md           研究範圍（權威文件）
+management.md           研究範圍（權威文件）
 DATA_STRUCTURE.md    資料夾結構說明
 config.json          抓取設定
 requirements-lock.txt 完整套件版本
@@ -96,15 +97,18 @@ run/                 早期實際執行的 notebook（見 run/README.md）
 models/<幣種>_4h_transformer/  四幣種 4h Transformer 權重與 .ptl
 docs/
   handover/          交接文件、前端資料說明、.ptl 說明、git 歷史改寫對照表
-  report/            專題報告初稿、簡報大綱、階段總報告、研究計畫書
+  report/            總審報告修訂版與修訂清單、專題報告初稿、簡報大綱、階段總報告、研究計畫書
   experiments/       各實驗結果與結論（一個實驗一個資料夾）
   data_features/     特徵工程與外部訊號說明
   figures/           報告圖 F1～F10 與圖表數字
   superpowers/       預先登記文件（定案後不修改）
+  demo/              demo 影片腳本、旁白、字幕
+archive/3y_stage/    3 年資料階段的舊文件、程式與測試（歷史紀錄，不再維護，tests/ 不會跑到）
+logs/**/*.json       實驗結果 JSON
 
 以下在資料壓縮檔裡，不在 GitHub：
 data/                原始、補值後、特徵、外部、即時更新資料
-logs/                所有實驗結果 JSON、逐列預測、驗證紀錄
+logs/                逐列預測、原始 log（JSON 結果檔已在 GitHub）
 models/live/         前向測試的凍結模型與滾動模型
 ```
 
@@ -116,16 +120,18 @@ models/live/         前向測試的凍結模型與滾動模型
 | [docs/handover/handover.md](docs/handover/handover.md) | 專案現況、檔案清單、剩下的工作、規則、附錄（繳交規定、寫作原則、新資料驗證、排程） |
 | [docs/handover/frontend_data_guide.md](docs/handover/frontend_data_guide.md) | 前端網站需要的資料與格式 |
 | [docs/handover/ptl_guide.md](docs/handover/ptl_guide.md) | 四幣種 4h Transformer 的 `.ptl` 行動端模型說明 |
+| [docs/report/總審報告_修訂版.docx](docs/report/總審報告_修訂版.docx) | 總審報告修訂版（2026-10-23） |
+| [docs/report/總審修訂清單.md](docs/report/總審修訂清單.md) | 總審待辦與章節對照 |
 | [docs/report/final_project_report.md](docs/report/final_project_report.md) | 專題報告初稿 |
 | [docs/report/final_presentation_outline.md](docs/report/final_presentation_outline.md) | 口試簡報大綱與 Q&A |
 | [docs/report/five_year_4h_final_report.md](docs/report/five_year_4h_final_report.md) | 五年資料 4 小時方向分類階段報告 |
 | [docs/experiments/4h_model_comparison/](docs/experiments/4h_model_comparison/) | BTC baseline、各幣種與四幣種彙整的三模型比較 |
 | [docs/data_features/feature_engineering.md](docs/data_features/feature_engineering.md) | 特徵與標籤定義、執行指令、輸出格式 |
-| `docs/report/7_...docx` | 研究計畫書（長期願景，範圍以 `agement.md` 為準） |
+| `docs/report/7_...docx` | 研究計畫書（長期願景，範圍以 `management.md` 為準） |
 
 ## 前一階段
 
-本研究前一階段曾以 3 年資料做初步測試；本專案與報告僅使用 5 年資料與嚴格評估流程。
+本研究前一階段曾以 3 年資料做初步測試；本專案與報告僅使用 5 年資料與嚴格評估流程。當時的文件放在 [archive/3y_stage/](archive/3y_stage/)，只供查閱。
 
 ## 安全說明
 

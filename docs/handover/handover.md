@@ -1,7 +1,7 @@
 # 專題交接說明
 
 > 交接日期：2026-09-30  
-> 交接方式：程式碼與文件在 GitHub（https://github.com/anbvjkannv12/Independent-Study），資料、實驗結果與凍結模型在資料壓縮檔 `專題_資料_2026-09-30.zip`（由原作者另外提供）  
+> 交接方式：程式碼與文件在 GitHub（https://github.com/anbvjkannv12/reserch），資料、實驗結果與凍結模型在資料壓縮檔 `專題_資料_2026-09-30.zip`（由原作者另外提供）  
 > 建議閱讀順序：根目錄的 `交接使用說明.md`（怎麼開始、怎麼操作）→ 本文件（專案現況與完整清單）→ `docs/report/final_project_report.md`
 
 ---
@@ -38,7 +38,7 @@
 1. **clone 專案**到任何資料夾，以下假設是 `D:\專題`。路徑不要有空格：
 
    ```powershell
-   git clone https://github.com/anbvjkannv12/Independent-Study.git D:\專題
+   git clone https://github.com/anbvjkannv12/reserch.git D:\專題
    cd D:\專題
    ```
 
@@ -84,7 +84,7 @@
 ### 2.4 之後修改專案
 
 - 程式碼與文件的修改：開分支、commit、push 到 GitHub，再開 Pull Request 合併到 `main`。
-- **不要把 `data/`、`logs/`、`models/live/` 加進 git**（`.gitignore` 已排除）。資料有新增時，另外打包並更新 `data_manifest.json`。
+- **不要把 `data/`、`models/live/` 與 `logs/` 的大檔加進 git**（`.gitignore` 已排除）。例外：`logs/` 的實驗結果 JSON（約 5 MB）自 2026-10-24 起放進 git，新增時用 `git add -f`。資料有新增時，另外打包並更新 `data_manifest.json`。
 
 ---
 
@@ -169,7 +169,7 @@
 | 文件 | 用途 |
 |---|---|
 | `README.md` | 專案總覽、目前結果、執行方式 |
-| `agement.md` | **研究範圍的權威文件**：做什麼、不做什麼 |
+| `management.md` | **研究範圍的權威文件**：做什麼、不做什麼 |
 | `交接使用說明.md` | 拿到專案後怎麼開始、日常怎麼操作 |
 | `docs/report/final_project_report.md` | 繳交用報告初稿 |
 | `docs/report/final_presentation_outline.md` | 口試簡報大綱與 Q&A |
@@ -219,7 +219,7 @@
 | 報告內容補強 | 待確認 | 決定波動延伸研究要不要寫進報告；若要，務必同時寫第七節第 5 點的限制 |
 | 口試準備 | 大綱已完成 | 依 `docs/report/final_presentation_outline.md` 做成簡報並練習 |
 | 備份 | 部分完成 | 程式碼在 GitHub；資料壓縮檔請至少存兩個地方（例如雲端硬碟與外接硬碟） |
-| 遠端 repo | 已設定 | https://github.com/anbvjkannv12/Independent-Study |
+| 遠端 repo | 已設定 | https://github.com/anbvjkannv12/reserch |
 | 即時預測展示 | 決定不做 | 需要時見附錄 D 啟用排程 |
 | `.ptl` 模型檔（PyTorch Lite） | 已完成 | 5 年資料 4h Transformer，BTC／ETH／SOL／XRP 各一；見下方 6.1 |
 | 前端呈現 | 網站由同學保管 | 資料說明見 `docs/handover/frontend_data_guide.md`（6.2） |
