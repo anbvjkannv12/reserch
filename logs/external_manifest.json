@@ -1,0 +1,114 @@
+{
+  "generated_utc": "2026-09-16T14:29:26Z",
+  "start": "2021-08-01",
+  "end": "2026-08-10",
+  "sources": {
+    "fear_greed": {
+      "provider": "alternative.me",
+      "frequency": "1d",
+      "file": "data\\external\\fear_greed.csv",
+      "row_count": 3146
+    },
+    "BTCUSDT": {
+      "onchain": {
+        "provider": "coinmetrics-community",
+        "frequency": "1d",
+        "metrics": [
+          "AdrActCnt",
+          "CapMVRVCur",
+          "FlowInExNtv",
+          "FlowOutExNtv"
+        ],
+        "file": "data\\external\\onchain_btcusdt.csv",
+        "row_count": 1836
+      },
+      "funding": {
+        "provider": "binance-fapi",
+        "frequency": "8h",
+        "file": "data\\external\\funding_btcusdt.csv",
+        "row_count": 5509
+      },
+      "open_interest": {
+        "provider": "data.binance.vision",
+        "frequency": "1h sampled from 5m",
+        "file": "data\\external\\open_interest_btcusdt.csv",
+        "row_count": 44054,
+        "coverage_start": "2021-08-01T00:00:00Z"
+      }
+    },
+    "ETHUSDT": {
+      "onchain": {
+        "provider": "coinmetrics-community",
+        "frequency": "1d",
+        "metrics": [
+          "AdrActCnt",
+          "CapMVRVCur",
+          "FlowInExNtv",
+          "FlowOutExNtv"
+        ],
+        "file": "data\\external\\onchain_ethusdt.csv",
+        "row_count": 1836
+      },
+      "funding": {
+        "provider": "binance-fapi",
+        "frequency": "8h",
+        "file": "data\\external\\funding_ethusdt.csv",
+        "row_count": 5509
+      },
+      "open_interest": {
+        "provider": "data.binance.vision",
+        "frequency": "1h sampled from 5m",
+        "file": "data\\external\\open_interest_ethusdt.csv",
+        "row_count": 41126,
+        "coverage_start": "2021-12-01T00:00:00Z"
+      }
+    },
+    "SOLUSDT": {
+      "onchain": {
+        "provider": "coinmetrics-community",
+        "frequency": "1d",
+        "metrics": [],
+        "file": null,
+        "row_count": 0
+      },
+      "funding": {
+        "provider": "binance-fapi",
+        "frequency": "8h",
+        "file": "data\\external\\funding_solusdt.csv",
+        "row_count": 5584
+      },
+      "open_interest": {
+        "provider": "data.binance.vision",
+        "frequency": "1h sampled from 5m",
+        "file": "data\\external\\open_interest_solusdt.csv",
+        "row_count": 41126,
+        "coverage_start": "2021-12-01T00:00:00Z"
+      }
+    },
+    "XRPUSDT": {
+      "onchain": {
+        "provider": "coinmetrics-community",
+        "frequency": "1d",
+        "metrics": [
+          "AdrActCnt",
+          "CapMVRVCur"
+        ],
+        "file": "data\\external\\onchain_xrpusdt.csv",
+        "row_count": 1836
+      },
+      "funding": {
+        "provider": "binance-fapi",
+        "frequency": "8h",
+        "file": "data\\external\\funding_xrpusdt.csv",
+        "row_count": 5509
+      },
+      "open_interest": {
+        "provider": "data.binance.vision",
+        "frequency": "1h sampled from 5m",
+        "file": "data\\external\\open_interest_xrpusdt.csv",
+        "row_count": 41126,
+        "coverage_start": "2021-12-01T00:00:00Z"
+      }
+    }
+  }
+}

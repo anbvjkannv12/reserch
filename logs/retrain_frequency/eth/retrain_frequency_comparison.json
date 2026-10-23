@@ -1,0 +1,2108 @@
+{
+  "symbol": "ETH",
+  "total_rows": 43756,
+  "eval_start_index": 31756,
+  "eval_end_exclusive": 43756,
+  "purge_rows": 24,
+  "eval_start_time": "2025-03-27 07:00:00+00:00",
+  "eval_end_time": "2026-08-09 06:00:00+00:00",
+  "git_revision": "295b278bf62a2e6aa1f2b3e1a686476d20cb4c6e",
+  "input_sha256": "354243e05237f0d65cbb4bf0874acd273293dc1aba21ab6e9642f523e8a4838c",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "xgboost_version": "3.2.0",
+  "arms": {
+    "F": {
+      "schedule": {
+        "42": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.188000000023749
+          }
+        ],
+        "43": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.686999999976251
+          }
+        ],
+        "44": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.75
+          }
+        ]
+      },
+      "training_count_per_seed": 1,
+      "auc_by_seed": {
+        "42": 0.5294876342273149,
+        "43": 0.5300299179828811,
+        "44": 0.5314401085667693
+      },
+      "pooled_mean_auc": 0.5303192202589885,
+      "segment_mean_auc": [
+        0.5357229300477161,
+        0.526754411074869,
+        0.5284946057795298
+      ],
+      "epsilon": 0.0019524743394543354,
+      "first_train_rows": 31732,
+      "last_train_rows": 31732
+    },
+    "R4000": {
+      "schedule": {
+        "42": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 35756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.5939999999827705
+          },
+          {
+            "prediction_start_index": 35756,
+            "prediction_end_exclusive": 39756,
+            "train_rows": 35732,
+            "last_train_index": 35731,
+            "seconds": 4.48399999999674
+          },
+          {
+            "prediction_start_index": 39756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 39732,
+            "last_train_index": 39731,
+            "seconds": 5.702999999979511
+          }
+        ],
+        "43": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 35756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.797000000020489
+          },
+          {
+            "prediction_start_index": 35756,
+            "prediction_end_exclusive": 39756,
+            "train_rows": 35732,
+            "last_train_index": 35731,
+            "seconds": 5.327999999979511
+          },
+          {
+            "prediction_start_index": 39756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 39732,
+            "last_train_index": 39731,
+            "seconds": 5.592999999993481
+          }
+        ],
+        "44": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 35756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.7189999999827705
+          },
+          {
+            "prediction_start_index": 35756,
+            "prediction_end_exclusive": 39756,
+            "train_rows": 35732,
+            "last_train_index": 35731,
+            "seconds": 4.85999999998603
+          },
+          {
+            "prediction_start_index": 39756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 39732,
+            "last_train_index": 39731,
+            "seconds": 5.51600000000326
+          }
+        ]
+      },
+      "training_count_per_seed": 3,
+      "auc_by_seed": {
+        "42": 0.5302144205916581,
+        "43": 0.5308935324376062,
+        "44": 0.5348475447525789
+      },
+      "pooled_mean_auc": 0.5319851659272811,
+      "segment_mean_auc": [
+        0.5357229300477161,
+        0.535414267158106,
+        0.526260559086258
+      ],
+      "epsilon": 0.004633124160920765,
+      "first_train_rows": 31732,
+      "last_train_rows": 39732
+    },
+    "R1000": {
+      "schedule": {
+        "42": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 32756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.125
+          },
+          {
+            "prediction_start_index": 32756,
+            "prediction_end_exclusive": 33756,
+            "train_rows": 32732,
+            "last_train_index": 32731,
+            "seconds": 5.030999999959022
+          },
+          {
+            "prediction_start_index": 33756,
+            "prediction_end_exclusive": 34756,
+            "train_rows": 33732,
+            "last_train_index": 33731,
+            "seconds": 4.469000000040978
+          },
+          {
+            "prediction_start_index": 34756,
+            "prediction_end_exclusive": 35756,
+            "train_rows": 34732,
+            "last_train_index": 34731,
+            "seconds": 4.937999999965541
+          },
+          {
+            "prediction_start_index": 35756,
+            "prediction_end_exclusive": 36756,
+            "train_rows": 35732,
+            "last_train_index": 35731,
+            "seconds": 5.375
+          },
+          {
+            "prediction_start_index": 36756,
+            "prediction_end_exclusive": 37756,
+            "train_rows": 36732,
+            "last_train_index": 36731,
+            "seconds": 2.98499999998603
+          },
+          {
+            "prediction_start_index": 37756,
+            "prediction_end_exclusive": 38756,
+            "train_rows": 37732,
+            "last_train_index": 37731,
+            "seconds": 3.39000000001397
+          },
+          {
+            "prediction_start_index": 38756,
+            "prediction_end_exclusive": 39756,
+            "train_rows": 38732,
+            "last_train_index": 38731,
+            "seconds": 4.657000000006519
+          },
+          {
+            "prediction_start_index": 39756,
+            "prediction_end_exclusive": 40756,
+            "train_rows": 39732,
+            "last_train_index": 39731,
+            "seconds": 4.795999999972992
+          },
+          {
+            "prediction_start_index": 40756,
+            "prediction_end_exclusive": 41756,
+            "train_rows": 40732,
+            "last_train_index": 40731,
+            "seconds": 5.64100000000326
+          },
+          {
+            "prediction_start_index": 41756,
+            "prediction_end_exclusive": 42756,
+            "train_rows": 41732,
+            "last_train_index": 41731,
+            "seconds": 5.7810000000172295
+          },
+          {
+            "prediction_start_index": 42756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 42732,
+            "last_train_index": 42731,
+            "seconds": 5.7810000000172295
+          }
+        ],
+        "43": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 32756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.48499999998603
+          },
+          {
+            "prediction_start_index": 32756,
+            "prediction_end_exclusive": 33756,
+            "train_rows": 32732,
+            "last_train_index": 32731,
+            "seconds": 2.3429999999934807
+          },
+          {
+            "prediction_start_index": 33756,
+            "prediction_end_exclusive": 34756,
+            "train_rows": 33732,
+            "last_train_index": 33731,
+            "seconds": 3.047000000020489
+          },
+          {
+            "prediction_start_index": 34756,
+            "prediction_end_exclusive": 35756,
+            "train_rows": 34732,
+            "last_train_index": 34731,
+            "seconds": 4.73499999998603
+          },
+          {
+            "prediction_start_index": 35756,
+            "prediction_end_exclusive": 36756,
+            "train_rows": 35732,
+            "last_train_index": 35731,
+            "seconds": 5.092999999993481
+          },
+          {
+            "prediction_start_index": 36756,
+            "prediction_end_exclusive": 37756,
+            "train_rows": 36732,
+            "last_train_index": 36731,
+            "seconds": 5.625
+          },
+          {
+            "prediction_start_index": 37756,
+            "prediction_end_exclusive": 38756,
+            "train_rows": 37732,
+            "last_train_index": 37731,
+            "seconds": 5.077999999979511
+          },
+          {
+            "prediction_start_index": 38756,
+            "prediction_end_exclusive": 39756,
+            "train_rows": 38732,
+            "last_train_index": 38731,
+            "seconds": 4.953000000037719
+          },
+          {
+            "prediction_start_index": 39756,
+            "prediction_end_exclusive": 40756,
+            "train_rows": 39732,
+            "last_train_index": 39731,
+            "seconds": 3.25
+          },
+          {
+            "prediction_start_index": 40756,
+            "prediction_end_exclusive": 41756,
+            "train_rows": 40732,
+            "last_train_index": 40731,
+            "seconds": 5.186999999976251
+          },
+          {
+            "prediction_start_index": 41756,
+            "prediction_end_exclusive": 42756,
+            "train_rows": 41732,
+            "last_train_index": 41731,
+            "seconds": 5.547000000020489
+          },
+          {
+            "prediction_start_index": 42756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 42732,
+            "last_train_index": 42731,
+            "seconds": 6.139999999955762
+          }
+        ],
+        "44": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 32756,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 5.0
+          },
+          {
+            "prediction_start_index": 32756,
+            "prediction_end_exclusive": 33756,
+            "train_rows": 32732,
+            "last_train_index": 32731,
+            "seconds": 5.032000000006519
+          },
+          {
+            "prediction_start_index": 33756,
+            "prediction_end_exclusive": 34756,
+            "train_rows": 33732,
+            "last_train_index": 33731,
+            "seconds": 4.702999999979511
+          },
+          {
+            "prediction_start_index": 34756,
+            "prediction_end_exclusive": 35756,
+            "train_rows": 34732,
+            "last_train_index": 34731,
+            "seconds": 5.235000000044238
+          },
+          {
+            "prediction_start_index": 35756,
+            "prediction_end_exclusive": 36756,
+            "train_rows": 35732,
+            "last_train_index": 35731,
+            "seconds": 5.23399999999674
+          },
+          {
+            "prediction_start_index": 36756,
+            "prediction_end_exclusive": 37756,
+            "train_rows": 36732,
+            "last_train_index": 36731,
+            "seconds": 3.5
+          },
+          {
+            "prediction_start_index": 37756,
+            "prediction_end_exclusive": 38756,
+            "train_rows": 37732,
+            "last_train_index": 37731,
+            "seconds": 2.625
+          },
+          {
+            "prediction_start_index": 38756,
+            "prediction_end_exclusive": 39756,
+            "train_rows": 38732,
+            "last_train_index": 38731,
+            "seconds": 4.530999999959022
+          },
+          {
+            "prediction_start_index": 39756,
+            "prediction_end_exclusive": 40756,
+            "train_rows": 39732,
+            "last_train_index": 39731,
+            "seconds": 5.422000000020489
+          },
+          {
+            "prediction_start_index": 40756,
+            "prediction_end_exclusive": 41756,
+            "train_rows": 40732,
+            "last_train_index": 40731,
+            "seconds": 4.98399999999674
+          },
+          {
+            "prediction_start_index": 41756,
+            "prediction_end_exclusive": 42756,
+            "train_rows": 41732,
+            "last_train_index": 41731,
+            "seconds": 5.73399999999674
+          },
+          {
+            "prediction_start_index": 42756,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 42732,
+            "last_train_index": 42731,
+            "seconds": 5.797000000020489
+          }
+        ]
+      },
+      "training_count_per_seed": 12,
+      "auc_by_seed": {
+        "42": 0.5295875534612353,
+        "43": 0.5338896508816688,
+        "44": 0.5338955824141148
+      },
+      "pooled_mean_auc": 0.5324575955856731,
+      "segment_mean_auc": [
+        0.5351130677023598,
+        0.537637502726075,
+        0.5242260961753831
+      ],
+      "epsilon": 0.004308028952879517,
+      "first_train_rows": 31732,
+      "last_train_rows": 42732
+    },
+    "R168": {
+      "schedule": {
+        "42": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 31924,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.0310000000172295
+          },
+          {
+            "prediction_start_index": 31924,
+            "prediction_end_exclusive": 32092,
+            "train_rows": 31900,
+            "last_train_index": 31899,
+            "seconds": 4.407000000006519
+          },
+          {
+            "prediction_start_index": 32092,
+            "prediction_end_exclusive": 32260,
+            "train_rows": 32068,
+            "last_train_index": 32067,
+            "seconds": 3.937000000034459
+          },
+          {
+            "prediction_start_index": 32260,
+            "prediction_end_exclusive": 32428,
+            "train_rows": 32236,
+            "last_train_index": 32235,
+            "seconds": 4.48499999998603
+          },
+          {
+            "prediction_start_index": 32428,
+            "prediction_end_exclusive": 32596,
+            "train_rows": 32404,
+            "last_train_index": 32403,
+            "seconds": 4.311999999976251
+          },
+          {
+            "prediction_start_index": 32596,
+            "prediction_end_exclusive": 32764,
+            "train_rows": 32572,
+            "last_train_index": 32571,
+            "seconds": 4.344000000040978
+          },
+          {
+            "prediction_start_index": 32764,
+            "prediction_end_exclusive": 32932,
+            "train_rows": 32740,
+            "last_train_index": 32739,
+            "seconds": 4.3439999999827705
+          },
+          {
+            "prediction_start_index": 32932,
+            "prediction_end_exclusive": 33100,
+            "train_rows": 32908,
+            "last_train_index": 32907,
+            "seconds": 4.10999999998603
+          },
+          {
+            "prediction_start_index": 33100,
+            "prediction_end_exclusive": 33268,
+            "train_rows": 33076,
+            "last_train_index": 33075,
+            "seconds": 4.0310000000172295
+          },
+          {
+            "prediction_start_index": 33268,
+            "prediction_end_exclusive": 33436,
+            "train_rows": 33244,
+            "last_train_index": 33243,
+            "seconds": 4.421999999962281
+          },
+          {
+            "prediction_start_index": 33436,
+            "prediction_end_exclusive": 33604,
+            "train_rows": 33412,
+            "last_train_index": 33411,
+            "seconds": 4.26500000001397
+          },
+          {
+            "prediction_start_index": 33604,
+            "prediction_end_exclusive": 33772,
+            "train_rows": 33580,
+            "last_train_index": 33579,
+            "seconds": 4.64100000000326
+          },
+          {
+            "prediction_start_index": 33772,
+            "prediction_end_exclusive": 33940,
+            "train_rows": 33748,
+            "last_train_index": 33747,
+            "seconds": 4.561999999976251
+          },
+          {
+            "prediction_start_index": 33940,
+            "prediction_end_exclusive": 34108,
+            "train_rows": 33916,
+            "last_train_index": 33915,
+            "seconds": 4.532000000006519
+          },
+          {
+            "prediction_start_index": 34108,
+            "prediction_end_exclusive": 34276,
+            "train_rows": 34084,
+            "last_train_index": 34083,
+            "seconds": 4.2810000000172295
+          },
+          {
+            "prediction_start_index": 34276,
+            "prediction_end_exclusive": 34444,
+            "train_rows": 34252,
+            "last_train_index": 34251,
+            "seconds": 3.6869999999762513
+          },
+          {
+            "prediction_start_index": 34444,
+            "prediction_end_exclusive": 34612,
+            "train_rows": 34420,
+            "last_train_index": 34419,
+            "seconds": 4.094000000040978
+          },
+          {
+            "prediction_start_index": 34612,
+            "prediction_end_exclusive": 34780,
+            "train_rows": 34588,
+            "last_train_index": 34587,
+            "seconds": 4.0939999999827705
+          },
+          {
+            "prediction_start_index": 34780,
+            "prediction_end_exclusive": 34948,
+            "train_rows": 34756,
+            "last_train_index": 34755,
+            "seconds": 4.217999999993481
+          },
+          {
+            "prediction_start_index": 34948,
+            "prediction_end_exclusive": 35116,
+            "train_rows": 34924,
+            "last_train_index": 34923,
+            "seconds": 4.657000000006519
+          },
+          {
+            "prediction_start_index": 35116,
+            "prediction_end_exclusive": 35284,
+            "train_rows": 35092,
+            "last_train_index": 35091,
+            "seconds": 4.51500000001397
+          },
+          {
+            "prediction_start_index": 35284,
+            "prediction_end_exclusive": 35452,
+            "train_rows": 35260,
+            "last_train_index": 35259,
+            "seconds": 4.0
+          },
+          {
+            "prediction_start_index": 35452,
+            "prediction_end_exclusive": 35620,
+            "train_rows": 35428,
+            "last_train_index": 35427,
+            "seconds": 4.296999999962281
+          },
+          {
+            "prediction_start_index": 35620,
+            "prediction_end_exclusive": 35788,
+            "train_rows": 35596,
+            "last_train_index": 35595,
+            "seconds": 4.375
+          },
+          {
+            "prediction_start_index": 35788,
+            "prediction_end_exclusive": 35956,
+            "train_rows": 35764,
+            "last_train_index": 35763,
+            "seconds": 4.5310000000172295
+          },
+          {
+            "prediction_start_index": 35956,
+            "prediction_end_exclusive": 36124,
+            "train_rows": 35932,
+            "last_train_index": 35931,
+            "seconds": 4.6560000000172295
+          },
+          {
+            "prediction_start_index": 36124,
+            "prediction_end_exclusive": 36292,
+            "train_rows": 36100,
+            "last_train_index": 36099,
+            "seconds": 4.3439999999827705
+          },
+          {
+            "prediction_start_index": 36292,
+            "prediction_end_exclusive": 36460,
+            "train_rows": 36268,
+            "last_train_index": 36267,
+            "seconds": 4.73399999999674
+          },
+          {
+            "prediction_start_index": 36460,
+            "prediction_end_exclusive": 36628,
+            "train_rows": 36436,
+            "last_train_index": 36435,
+            "seconds": 4.875
+          },
+          {
+            "prediction_start_index": 36628,
+            "prediction_end_exclusive": 36796,
+            "train_rows": 36604,
+            "last_train_index": 36603,
+            "seconds": 4.60999999998603
+          },
+          {
+            "prediction_start_index": 36796,
+            "prediction_end_exclusive": 36964,
+            "train_rows": 36772,
+            "last_train_index": 36771,
+            "seconds": 4.5310000000172295
+          },
+          {
+            "prediction_start_index": 36964,
+            "prediction_end_exclusive": 37132,
+            "train_rows": 36940,
+            "last_train_index": 36939,
+            "seconds": 5.0310000000172295
+          },
+          {
+            "prediction_start_index": 37132,
+            "prediction_end_exclusive": 37300,
+            "train_rows": 37108,
+            "last_train_index": 37107,
+            "seconds": 4.875
+          },
+          {
+            "prediction_start_index": 37300,
+            "prediction_end_exclusive": 37468,
+            "train_rows": 37276,
+            "last_train_index": 37275,
+            "seconds": 4.5939999999827705
+          },
+          {
+            "prediction_start_index": 37468,
+            "prediction_end_exclusive": 37636,
+            "train_rows": 37444,
+            "last_train_index": 37443,
+            "seconds": 5.047000000020489
+          },
+          {
+            "prediction_start_index": 37636,
+            "prediction_end_exclusive": 37804,
+            "train_rows": 37612,
+            "last_train_index": 37611,
+            "seconds": 5.172000000020489
+          },
+          {
+            "prediction_start_index": 37804,
+            "prediction_end_exclusive": 37972,
+            "train_rows": 37780,
+            "last_train_index": 37779,
+            "seconds": 5.077999999979511
+          },
+          {
+            "prediction_start_index": 37972,
+            "prediction_end_exclusive": 38140,
+            "train_rows": 37948,
+            "last_train_index": 37947,
+            "seconds": 5.39100000000326
+          },
+          {
+            "prediction_start_index": 38140,
+            "prediction_end_exclusive": 38308,
+            "train_rows": 38116,
+            "last_train_index": 38115,
+            "seconds": 4.797000000020489
+          },
+          {
+            "prediction_start_index": 38308,
+            "prediction_end_exclusive": 38476,
+            "train_rows": 38284,
+            "last_train_index": 38283,
+            "seconds": 5.01600000000326
+          },
+          {
+            "prediction_start_index": 38476,
+            "prediction_end_exclusive": 38644,
+            "train_rows": 38452,
+            "last_train_index": 38451,
+            "seconds": 4.76600000000326
+          },
+          {
+            "prediction_start_index": 38644,
+            "prediction_end_exclusive": 38812,
+            "train_rows": 38620,
+            "last_train_index": 38619,
+            "seconds": 4.811999999976251
+          },
+          {
+            "prediction_start_index": 38812,
+            "prediction_end_exclusive": 38980,
+            "train_rows": 38788,
+            "last_train_index": 38787,
+            "seconds": 5.327999999979511
+          },
+          {
+            "prediction_start_index": 38980,
+            "prediction_end_exclusive": 39148,
+            "train_rows": 38956,
+            "last_train_index": 38955,
+            "seconds": 5.188000000023749
+          },
+          {
+            "prediction_start_index": 39148,
+            "prediction_end_exclusive": 39316,
+            "train_rows": 39124,
+            "last_train_index": 39123,
+            "seconds": 5.89000000001397
+          },
+          {
+            "prediction_start_index": 39316,
+            "prediction_end_exclusive": 39484,
+            "train_rows": 39292,
+            "last_train_index": 39291,
+            "seconds": 6.0
+          },
+          {
+            "prediction_start_index": 39484,
+            "prediction_end_exclusive": 39652,
+            "train_rows": 39460,
+            "last_train_index": 39459,
+            "seconds": 5.905999999959022
+          },
+          {
+            "prediction_start_index": 39652,
+            "prediction_end_exclusive": 39820,
+            "train_rows": 39628,
+            "last_train_index": 39627,
+            "seconds": 5.704000000027008
+          },
+          {
+            "prediction_start_index": 39820,
+            "prediction_end_exclusive": 39988,
+            "train_rows": 39796,
+            "last_train_index": 39795,
+            "seconds": 5.6560000000172295
+          },
+          {
+            "prediction_start_index": 39988,
+            "prediction_end_exclusive": 40156,
+            "train_rows": 39964,
+            "last_train_index": 39963,
+            "seconds": 6.202999999979511
+          },
+          {
+            "prediction_start_index": 40156,
+            "prediction_end_exclusive": 40324,
+            "train_rows": 40132,
+            "last_train_index": 40131,
+            "seconds": 6.172000000020489
+          },
+          {
+            "prediction_start_index": 40324,
+            "prediction_end_exclusive": 40492,
+            "train_rows": 40300,
+            "last_train_index": 40299,
+            "seconds": 6.329000000027008
+          },
+          {
+            "prediction_start_index": 40492,
+            "prediction_end_exclusive": 40660,
+            "train_rows": 40468,
+            "last_train_index": 40467,
+            "seconds": 6.01500000001397
+          },
+          {
+            "prediction_start_index": 40660,
+            "prediction_end_exclusive": 40828,
+            "train_rows": 40636,
+            "last_train_index": 40635,
+            "seconds": 6.125
+          },
+          {
+            "prediction_start_index": 40828,
+            "prediction_end_exclusive": 40996,
+            "train_rows": 40804,
+            "last_train_index": 40803,
+            "seconds": 6.4689999999827705
+          },
+          {
+            "prediction_start_index": 40996,
+            "prediction_end_exclusive": 41164,
+            "train_rows": 40972,
+            "last_train_index": 40971,
+            "seconds": 6.48499999998603
+          },
+          {
+            "prediction_start_index": 41164,
+            "prediction_end_exclusive": 41332,
+            "train_rows": 41140,
+            "last_train_index": 41139,
+            "seconds": 6.467999999993481
+          },
+          {
+            "prediction_start_index": 41332,
+            "prediction_end_exclusive": 41500,
+            "train_rows": 41308,
+            "last_train_index": 41307,
+            "seconds": 5.672000000020489
+          },
+          {
+            "prediction_start_index": 41500,
+            "prediction_end_exclusive": 41668,
+            "train_rows": 41476,
+            "last_train_index": 41475,
+            "seconds": 6.921999999962281
+          },
+          {
+            "prediction_start_index": 41668,
+            "prediction_end_exclusive": 41836,
+            "train_rows": 41644,
+            "last_train_index": 41643,
+            "seconds": 6.98399999999674
+          },
+          {
+            "prediction_start_index": 41836,
+            "prediction_end_exclusive": 42004,
+            "train_rows": 41812,
+            "last_train_index": 41811,
+            "seconds": 6.594000000040978
+          },
+          {
+            "prediction_start_index": 42004,
+            "prediction_end_exclusive": 42172,
+            "train_rows": 41980,
+            "last_train_index": 41979,
+            "seconds": 5.14100000000326
+          },
+          {
+            "prediction_start_index": 42172,
+            "prediction_end_exclusive": 42340,
+            "train_rows": 42148,
+            "last_train_index": 42147,
+            "seconds": 5.827999999979511
+          },
+          {
+            "prediction_start_index": 42340,
+            "prediction_end_exclusive": 42508,
+            "train_rows": 42316,
+            "last_train_index": 42315,
+            "seconds": 5.202999999979511
+          },
+          {
+            "prediction_start_index": 42508,
+            "prediction_end_exclusive": 42676,
+            "train_rows": 42484,
+            "last_train_index": 42483,
+            "seconds": 5.203000000037719
+          },
+          {
+            "prediction_start_index": 42676,
+            "prediction_end_exclusive": 42844,
+            "train_rows": 42652,
+            "last_train_index": 42651,
+            "seconds": 5.5
+          },
+          {
+            "prediction_start_index": 42844,
+            "prediction_end_exclusive": 43012,
+            "train_rows": 42820,
+            "last_train_index": 42819,
+            "seconds": 6.094000000040978
+          },
+          {
+            "prediction_start_index": 43012,
+            "prediction_end_exclusive": 43180,
+            "train_rows": 42988,
+            "last_train_index": 42987,
+            "seconds": 6.296999999962281
+          },
+          {
+            "prediction_start_index": 43180,
+            "prediction_end_exclusive": 43348,
+            "train_rows": 43156,
+            "last_train_index": 43155,
+            "seconds": 6.453000000037719
+          },
+          {
+            "prediction_start_index": 43348,
+            "prediction_end_exclusive": 43516,
+            "train_rows": 43324,
+            "last_train_index": 43323,
+            "seconds": 6.14100000000326
+          },
+          {
+            "prediction_start_index": 43516,
+            "prediction_end_exclusive": 43684,
+            "train_rows": 43492,
+            "last_train_index": 43491,
+            "seconds": 6.389999999955762
+          },
+          {
+            "prediction_start_index": 43684,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 43660,
+            "last_train_index": 43659,
+            "seconds": 6.329000000027008
+          }
+        ],
+        "43": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 31924,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.795999999972992
+          },
+          {
+            "prediction_start_index": 31924,
+            "prediction_end_exclusive": 32092,
+            "train_rows": 31900,
+            "last_train_index": 31899,
+            "seconds": 4.76600000000326
+          },
+          {
+            "prediction_start_index": 32092,
+            "prediction_end_exclusive": 32260,
+            "train_rows": 32068,
+            "last_train_index": 32067,
+            "seconds": 3.547000000020489
+          },
+          {
+            "prediction_start_index": 32260,
+            "prediction_end_exclusive": 32428,
+            "train_rows": 32236,
+            "last_train_index": 32235,
+            "seconds": 4.436999999976251
+          },
+          {
+            "prediction_start_index": 32428,
+            "prediction_end_exclusive": 32596,
+            "train_rows": 32404,
+            "last_train_index": 32403,
+            "seconds": 3.8280000000377186
+          },
+          {
+            "prediction_start_index": 32596,
+            "prediction_end_exclusive": 32764,
+            "train_rows": 32572,
+            "last_train_index": 32571,
+            "seconds": 4.14100000000326
+          },
+          {
+            "prediction_start_index": 32764,
+            "prediction_end_exclusive": 32932,
+            "train_rows": 32740,
+            "last_train_index": 32739,
+            "seconds": 3.9839999999967404
+          },
+          {
+            "prediction_start_index": 32932,
+            "prediction_end_exclusive": 33100,
+            "train_rows": 32908,
+            "last_train_index": 32907,
+            "seconds": 4.030999999959022
+          },
+          {
+            "prediction_start_index": 33100,
+            "prediction_end_exclusive": 33268,
+            "train_rows": 33076,
+            "last_train_index": 33075,
+            "seconds": 4.079000000027008
+          },
+          {
+            "prediction_start_index": 33268,
+            "prediction_end_exclusive": 33436,
+            "train_rows": 33244,
+            "last_train_index": 33243,
+            "seconds": 4.0310000000172295
+          },
+          {
+            "prediction_start_index": 33436,
+            "prediction_end_exclusive": 33604,
+            "train_rows": 33412,
+            "last_train_index": 33411,
+            "seconds": 4.25
+          },
+          {
+            "prediction_start_index": 33604,
+            "prediction_end_exclusive": 33772,
+            "train_rows": 33580,
+            "last_train_index": 33579,
+            "seconds": 4.327999999979511
+          },
+          {
+            "prediction_start_index": 33772,
+            "prediction_end_exclusive": 33940,
+            "train_rows": 33748,
+            "last_train_index": 33747,
+            "seconds": 4.4060000000172295
+          },
+          {
+            "prediction_start_index": 33940,
+            "prediction_end_exclusive": 34108,
+            "train_rows": 33916,
+            "last_train_index": 33915,
+            "seconds": 2.577999999979511
+          },
+          {
+            "prediction_start_index": 34108,
+            "prediction_end_exclusive": 34276,
+            "train_rows": 34084,
+            "last_train_index": 34083,
+            "seconds": 2.375
+          },
+          {
+            "prediction_start_index": 34276,
+            "prediction_end_exclusive": 34444,
+            "train_rows": 34252,
+            "last_train_index": 34251,
+            "seconds": 4.75
+          },
+          {
+            "prediction_start_index": 34444,
+            "prediction_end_exclusive": 34612,
+            "train_rows": 34420,
+            "last_train_index": 34419,
+            "seconds": 4.8439999999827705
+          },
+          {
+            "prediction_start_index": 34612,
+            "prediction_end_exclusive": 34780,
+            "train_rows": 34588,
+            "last_train_index": 34587,
+            "seconds": 4.844000000040978
+          },
+          {
+            "prediction_start_index": 34780,
+            "prediction_end_exclusive": 34948,
+            "train_rows": 34756,
+            "last_train_index": 34755,
+            "seconds": 4.764999999955762
+          },
+          {
+            "prediction_start_index": 34948,
+            "prediction_end_exclusive": 35116,
+            "train_rows": 34924,
+            "last_train_index": 34923,
+            "seconds": 4.85899999999674
+          },
+          {
+            "prediction_start_index": 35116,
+            "prediction_end_exclusive": 35284,
+            "train_rows": 35092,
+            "last_train_index": 35091,
+            "seconds": 4.829000000027008
+          },
+          {
+            "prediction_start_index": 35284,
+            "prediction_end_exclusive": 35452,
+            "train_rows": 35260,
+            "last_train_index": 35259,
+            "seconds": 4.967999999993481
+          },
+          {
+            "prediction_start_index": 35452,
+            "prediction_end_exclusive": 35620,
+            "train_rows": 35428,
+            "last_train_index": 35427,
+            "seconds": 4.7189999999827705
+          },
+          {
+            "prediction_start_index": 35620,
+            "prediction_end_exclusive": 35788,
+            "train_rows": 35596,
+            "last_train_index": 35595,
+            "seconds": 4.75
+          },
+          {
+            "prediction_start_index": 35788,
+            "prediction_end_exclusive": 35956,
+            "train_rows": 35764,
+            "last_train_index": 35763,
+            "seconds": 4.9060000000172295
+          },
+          {
+            "prediction_start_index": 35956,
+            "prediction_end_exclusive": 36124,
+            "train_rows": 35932,
+            "last_train_index": 35931,
+            "seconds": 5.061999999976251
+          },
+          {
+            "prediction_start_index": 36124,
+            "prediction_end_exclusive": 36292,
+            "train_rows": 36100,
+            "last_train_index": 36099,
+            "seconds": 4.51600000000326
+          },
+          {
+            "prediction_start_index": 36292,
+            "prediction_end_exclusive": 36460,
+            "train_rows": 36268,
+            "last_train_index": 36267,
+            "seconds": 4.828000000037719
+          },
+          {
+            "prediction_start_index": 36460,
+            "prediction_end_exclusive": 36628,
+            "train_rows": 36436,
+            "last_train_index": 36435,
+            "seconds": 4.85999999998603
+          },
+          {
+            "prediction_start_index": 36628,
+            "prediction_end_exclusive": 36796,
+            "train_rows": 36604,
+            "last_train_index": 36603,
+            "seconds": 5.01500000001397
+          },
+          {
+            "prediction_start_index": 36796,
+            "prediction_end_exclusive": 36964,
+            "train_rows": 36772,
+            "last_train_index": 36771,
+            "seconds": 5.030999999959022
+          },
+          {
+            "prediction_start_index": 36964,
+            "prediction_end_exclusive": 37132,
+            "train_rows": 36940,
+            "last_train_index": 36939,
+            "seconds": 5.51600000000326
+          },
+          {
+            "prediction_start_index": 37132,
+            "prediction_end_exclusive": 37300,
+            "train_rows": 37108,
+            "last_train_index": 37107,
+            "seconds": 5.375
+          },
+          {
+            "prediction_start_index": 37300,
+            "prediction_end_exclusive": 37468,
+            "train_rows": 37276,
+            "last_train_index": 37275,
+            "seconds": 5.01600000000326
+          },
+          {
+            "prediction_start_index": 37468,
+            "prediction_end_exclusive": 37636,
+            "train_rows": 37444,
+            "last_train_index": 37443,
+            "seconds": 5.01500000001397
+          },
+          {
+            "prediction_start_index": 37636,
+            "prediction_end_exclusive": 37804,
+            "train_rows": 37612,
+            "last_train_index": 37611,
+            "seconds": 5.48499999998603
+          },
+          {
+            "prediction_start_index": 37804,
+            "prediction_end_exclusive": 37972,
+            "train_rows": 37780,
+            "last_train_index": 37779,
+            "seconds": 5.562000000034459
+          },
+          {
+            "prediction_start_index": 37972,
+            "prediction_end_exclusive": 38140,
+            "train_rows": 37948,
+            "last_train_index": 37947,
+            "seconds": 5.73499999998603
+          },
+          {
+            "prediction_start_index": 38140,
+            "prediction_end_exclusive": 38308,
+            "train_rows": 38116,
+            "last_train_index": 38115,
+            "seconds": 5.6560000000172295
+          },
+          {
+            "prediction_start_index": 38308,
+            "prediction_end_exclusive": 38476,
+            "train_rows": 38284,
+            "last_train_index": 38283,
+            "seconds": 5.5939999999827705
+          },
+          {
+            "prediction_start_index": 38476,
+            "prediction_end_exclusive": 38644,
+            "train_rows": 38452,
+            "last_train_index": 38451,
+            "seconds": 5.717999999993481
+          },
+          {
+            "prediction_start_index": 38644,
+            "prediction_end_exclusive": 38812,
+            "train_rows": 38620,
+            "last_train_index": 38619,
+            "seconds": 5.5939999999827705
+          },
+          {
+            "prediction_start_index": 38812,
+            "prediction_end_exclusive": 38980,
+            "train_rows": 38788,
+            "last_train_index": 38787,
+            "seconds": 5.60899999999674
+          },
+          {
+            "prediction_start_index": 38980,
+            "prediction_end_exclusive": 39148,
+            "train_rows": 38956,
+            "last_train_index": 38955,
+            "seconds": 5.797000000020489
+          },
+          {
+            "prediction_start_index": 39148,
+            "prediction_end_exclusive": 39316,
+            "train_rows": 39124,
+            "last_train_index": 39123,
+            "seconds": 6.0
+          },
+          {
+            "prediction_start_index": 39316,
+            "prediction_end_exclusive": 39484,
+            "train_rows": 39292,
+            "last_train_index": 39291,
+            "seconds": 6.311999999976251
+          },
+          {
+            "prediction_start_index": 39484,
+            "prediction_end_exclusive": 39652,
+            "train_rows": 39460,
+            "last_train_index": 39459,
+            "seconds": 6.125
+          },
+          {
+            "prediction_start_index": 39652,
+            "prediction_end_exclusive": 39820,
+            "train_rows": 39628,
+            "last_train_index": 39627,
+            "seconds": 6.1560000000172295
+          },
+          {
+            "prediction_start_index": 39820,
+            "prediction_end_exclusive": 39988,
+            "train_rows": 39796,
+            "last_train_index": 39795,
+            "seconds": 6.0
+          },
+          {
+            "prediction_start_index": 39988,
+            "prediction_end_exclusive": 40156,
+            "train_rows": 39964,
+            "last_train_index": 39963,
+            "seconds": 6.25
+          },
+          {
+            "prediction_start_index": 40156,
+            "prediction_end_exclusive": 40324,
+            "train_rows": 40132,
+            "last_train_index": 40131,
+            "seconds": 6.01600000000326
+          },
+          {
+            "prediction_start_index": 40324,
+            "prediction_end_exclusive": 40492,
+            "train_rows": 40300,
+            "last_train_index": 40299,
+            "seconds": 5.625
+          },
+          {
+            "prediction_start_index": 40492,
+            "prediction_end_exclusive": 40660,
+            "train_rows": 40468,
+            "last_train_index": 40467,
+            "seconds": 5.875
+          },
+          {
+            "prediction_start_index": 40660,
+            "prediction_end_exclusive": 40828,
+            "train_rows": 40636,
+            "last_train_index": 40635,
+            "seconds": 6.561999999976251
+          },
+          {
+            "prediction_start_index": 40828,
+            "prediction_end_exclusive": 40996,
+            "train_rows": 40804,
+            "last_train_index": 40803,
+            "seconds": 4.89100000000326
+          },
+          {
+            "prediction_start_index": 40996,
+            "prediction_end_exclusive": 41164,
+            "train_rows": 40972,
+            "last_train_index": 40971,
+            "seconds": 6.188000000023749
+          },
+          {
+            "prediction_start_index": 41164,
+            "prediction_end_exclusive": 41332,
+            "train_rows": 41140,
+            "last_train_index": 41139,
+            "seconds": 6.561999999976251
+          },
+          {
+            "prediction_start_index": 41332,
+            "prediction_end_exclusive": 41500,
+            "train_rows": 41308,
+            "last_train_index": 41307,
+            "seconds": 6.438000000023749
+          },
+          {
+            "prediction_start_index": 41500,
+            "prediction_end_exclusive": 41668,
+            "train_rows": 41476,
+            "last_train_index": 41475,
+            "seconds": 6.64000000001397
+          },
+          {
+            "prediction_start_index": 41668,
+            "prediction_end_exclusive": 41836,
+            "train_rows": 41644,
+            "last_train_index": 41643,
+            "seconds": 6.3439999999827705
+          },
+          {
+            "prediction_start_index": 41836,
+            "prediction_end_exclusive": 42004,
+            "train_rows": 41812,
+            "last_train_index": 41811,
+            "seconds": 6.547000000020489
+          },
+          {
+            "prediction_start_index": 42004,
+            "prediction_end_exclusive": 42172,
+            "train_rows": 41980,
+            "last_train_index": 41979,
+            "seconds": 5.7189999999827705
+          },
+          {
+            "prediction_start_index": 42172,
+            "prediction_end_exclusive": 42340,
+            "train_rows": 42148,
+            "last_train_index": 42147,
+            "seconds": 5.795999999972992
+          },
+          {
+            "prediction_start_index": 42340,
+            "prediction_end_exclusive": 42508,
+            "train_rows": 42316,
+            "last_train_index": 42315,
+            "seconds": 6.188000000023749
+          },
+          {
+            "prediction_start_index": 42508,
+            "prediction_end_exclusive": 42676,
+            "train_rows": 42484,
+            "last_train_index": 42483,
+            "seconds": 6.26500000001397
+          },
+          {
+            "prediction_start_index": 42676,
+            "prediction_end_exclusive": 42844,
+            "train_rows": 42652,
+            "last_train_index": 42651,
+            "seconds": 6.35999999998603
+          },
+          {
+            "prediction_start_index": 42844,
+            "prediction_end_exclusive": 43012,
+            "train_rows": 42820,
+            "last_train_index": 42819,
+            "seconds": 6.375
+          },
+          {
+            "prediction_start_index": 43012,
+            "prediction_end_exclusive": 43180,
+            "train_rows": 42988,
+            "last_train_index": 42987,
+            "seconds": 6.25
+          },
+          {
+            "prediction_start_index": 43180,
+            "prediction_end_exclusive": 43348,
+            "train_rows": 43156,
+            "last_train_index": 43155,
+            "seconds": 6.186999999976251
+          },
+          {
+            "prediction_start_index": 43348,
+            "prediction_end_exclusive": 43516,
+            "train_rows": 43324,
+            "last_train_index": 43323,
+            "seconds": 6.14000000001397
+          },
+          {
+            "prediction_start_index": 43516,
+            "prediction_end_exclusive": 43684,
+            "train_rows": 43492,
+            "last_train_index": 43491,
+            "seconds": 6.25
+          },
+          {
+            "prediction_start_index": 43684,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 43660,
+            "last_train_index": 43659,
+            "seconds": 6.0939999999827705
+          }
+        ],
+        "44": [
+          {
+            "prediction_start_index": 31756,
+            "prediction_end_exclusive": 31924,
+            "train_rows": 31732,
+            "last_train_index": 31731,
+            "seconds": 4.938000000023749
+          },
+          {
+            "prediction_start_index": 31924,
+            "prediction_end_exclusive": 32092,
+            "train_rows": 31900,
+            "last_train_index": 31899,
+            "seconds": 4.85899999999674
+          },
+          {
+            "prediction_start_index": 32092,
+            "prediction_end_exclusive": 32260,
+            "train_rows": 32068,
+            "last_train_index": 32067,
+            "seconds": 4.625
+          },
+          {
+            "prediction_start_index": 32260,
+            "prediction_end_exclusive": 32428,
+            "train_rows": 32236,
+            "last_train_index": 32235,
+            "seconds": 4.8439999999827705
+          },
+          {
+            "prediction_start_index": 32428,
+            "prediction_end_exclusive": 32596,
+            "train_rows": 32404,
+            "last_train_index": 32403,
+            "seconds": 4.98399999999674
+          },
+          {
+            "prediction_start_index": 32596,
+            "prediction_end_exclusive": 32764,
+            "train_rows": 32572,
+            "last_train_index": 32571,
+            "seconds": 4.89100000000326
+          },
+          {
+            "prediction_start_index": 32764,
+            "prediction_end_exclusive": 32932,
+            "train_rows": 32740,
+            "last_train_index": 32739,
+            "seconds": 4.717999999993481
+          },
+          {
+            "prediction_start_index": 32932,
+            "prediction_end_exclusive": 33100,
+            "train_rows": 32908,
+            "last_train_index": 32907,
+            "seconds": 4.688000000023749
+          },
+          {
+            "prediction_start_index": 33100,
+            "prediction_end_exclusive": 33268,
+            "train_rows": 33076,
+            "last_train_index": 33075,
+            "seconds": 4.7189999999827705
+          },
+          {
+            "prediction_start_index": 33268,
+            "prediction_end_exclusive": 33436,
+            "train_rows": 33244,
+            "last_train_index": 33243,
+            "seconds": 4.828000000037719
+          },
+          {
+            "prediction_start_index": 33436,
+            "prediction_end_exclusive": 33604,
+            "train_rows": 33412,
+            "last_train_index": 33411,
+            "seconds": 5.077999999979511
+          },
+          {
+            "prediction_start_index": 33604,
+            "prediction_end_exclusive": 33772,
+            "train_rows": 33580,
+            "last_train_index": 33579,
+            "seconds": 4.9060000000172295
+          },
+          {
+            "prediction_start_index": 33772,
+            "prediction_end_exclusive": 33940,
+            "train_rows": 33748,
+            "last_train_index": 33747,
+            "seconds": 4.875
+          },
+          {
+            "prediction_start_index": 33940,
+            "prediction_end_exclusive": 34108,
+            "train_rows": 33916,
+            "last_train_index": 33915,
+            "seconds": 4.8439999999827705
+          },
+          {
+            "prediction_start_index": 34108,
+            "prediction_end_exclusive": 34276,
+            "train_rows": 34084,
+            "last_train_index": 34083,
+            "seconds": 5.1560000000172295
+          },
+          {
+            "prediction_start_index": 34276,
+            "prediction_end_exclusive": 34444,
+            "train_rows": 34252,
+            "last_train_index": 34251,
+            "seconds": 4.98499999998603
+          },
+          {
+            "prediction_start_index": 34444,
+            "prediction_end_exclusive": 34612,
+            "train_rows": 34420,
+            "last_train_index": 34419,
+            "seconds": 5.01500000001397
+          },
+          {
+            "prediction_start_index": 34612,
+            "prediction_end_exclusive": 34780,
+            "train_rows": 34588,
+            "last_train_index": 34587,
+            "seconds": 5.01600000000326
+          },
+          {
+            "prediction_start_index": 34780,
+            "prediction_end_exclusive": 34948,
+            "train_rows": 34756,
+            "last_train_index": 34755,
+            "seconds": 5.188000000023749
+          },
+          {
+            "prediction_start_index": 34948,
+            "prediction_end_exclusive": 35116,
+            "train_rows": 34924,
+            "last_train_index": 34923,
+            "seconds": 5.295999999972992
+          },
+          {
+            "prediction_start_index": 35116,
+            "prediction_end_exclusive": 35284,
+            "train_rows": 35092,
+            "last_train_index": 35091,
+            "seconds": 5.297000000020489
+          },
+          {
+            "prediction_start_index": 35284,
+            "prediction_end_exclusive": 35452,
+            "train_rows": 35260,
+            "last_train_index": 35259,
+            "seconds": 5.547000000020489
+          },
+          {
+            "prediction_start_index": 35452,
+            "prediction_end_exclusive": 35620,
+            "train_rows": 35428,
+            "last_train_index": 35427,
+            "seconds": 5.375
+          },
+          {
+            "prediction_start_index": 35620,
+            "prediction_end_exclusive": 35788,
+            "train_rows": 35596,
+            "last_train_index": 35595,
+            "seconds": 5.48499999998603
+          },
+          {
+            "prediction_start_index": 35788,
+            "prediction_end_exclusive": 35956,
+            "train_rows": 35764,
+            "last_train_index": 35763,
+            "seconds": 5.35899999999674
+          },
+          {
+            "prediction_start_index": 35956,
+            "prediction_end_exclusive": 36124,
+            "train_rows": 35932,
+            "last_train_index": 35931,
+            "seconds": 5.35899999999674
+          },
+          {
+            "prediction_start_index": 36124,
+            "prediction_end_exclusive": 36292,
+            "train_rows": 36100,
+            "last_train_index": 36099,
+            "seconds": 5.625
+          },
+          {
+            "prediction_start_index": 36292,
+            "prediction_end_exclusive": 36460,
+            "train_rows": 36268,
+            "last_train_index": 36267,
+            "seconds": 5.51500000001397
+          },
+          {
+            "prediction_start_index": 36460,
+            "prediction_end_exclusive": 36628,
+            "train_rows": 36436,
+            "last_train_index": 36435,
+            "seconds": 5.546999999962281
+          },
+          {
+            "prediction_start_index": 36628,
+            "prediction_end_exclusive": 36796,
+            "train_rows": 36604,
+            "last_train_index": 36603,
+            "seconds": 5.51600000000326
+          },
+          {
+            "prediction_start_index": 36796,
+            "prediction_end_exclusive": 36964,
+            "train_rows": 36772,
+            "last_train_index": 36771,
+            "seconds": 5.562000000034459
+          },
+          {
+            "prediction_start_index": 36964,
+            "prediction_end_exclusive": 37132,
+            "train_rows": 36940,
+            "last_train_index": 36939,
+            "seconds": 5.7189999999827705
+          },
+          {
+            "prediction_start_index": 37132,
+            "prediction_end_exclusive": 37300,
+            "train_rows": 37108,
+            "last_train_index": 37107,
+            "seconds": 5.64100000000326
+          },
+          {
+            "prediction_start_index": 37300,
+            "prediction_end_exclusive": 37468,
+            "train_rows": 37276,
+            "last_train_index": 37275,
+            "seconds": 5.702999999979511
+          },
+          {
+            "prediction_start_index": 37468,
+            "prediction_end_exclusive": 37636,
+            "train_rows": 37444,
+            "last_train_index": 37443,
+            "seconds": 5.953000000037719
+          },
+          {
+            "prediction_start_index": 37636,
+            "prediction_end_exclusive": 37804,
+            "train_rows": 37612,
+            "last_train_index": 37611,
+            "seconds": 5.8439999999827705
+          },
+          {
+            "prediction_start_index": 37804,
+            "prediction_end_exclusive": 37972,
+            "train_rows": 37780,
+            "last_train_index": 37779,
+            "seconds": 6.0310000000172295
+          },
+          {
+            "prediction_start_index": 37972,
+            "prediction_end_exclusive": 38140,
+            "train_rows": 37948,
+            "last_train_index": 37947,
+            "seconds": 5.764999999955762
+          },
+          {
+            "prediction_start_index": 38140,
+            "prediction_end_exclusive": 38308,
+            "train_rows": 38116,
+            "last_train_index": 38115,
+            "seconds": 5.938000000023749
+          },
+          {
+            "prediction_start_index": 38308,
+            "prediction_end_exclusive": 38476,
+            "train_rows": 38284,
+            "last_train_index": 38283,
+            "seconds": 6.077999999979511
+          },
+          {
+            "prediction_start_index": 38476,
+            "prediction_end_exclusive": 38644,
+            "train_rows": 38452,
+            "last_train_index": 38451,
+            "seconds": 6.2810000000172295
+          },
+          {
+            "prediction_start_index": 38644,
+            "prediction_end_exclusive": 38812,
+            "train_rows": 38620,
+            "last_train_index": 38619,
+            "seconds": 6.14100000000326
+          },
+          {
+            "prediction_start_index": 38812,
+            "prediction_end_exclusive": 38980,
+            "train_rows": 38788,
+            "last_train_index": 38787,
+            "seconds": 6.35899999999674
+          },
+          {
+            "prediction_start_index": 38980,
+            "prediction_end_exclusive": 39148,
+            "train_rows": 38956,
+            "last_train_index": 38955,
+            "seconds": 6.2810000000172295
+          },
+          {
+            "prediction_start_index": 39148,
+            "prediction_end_exclusive": 39316,
+            "train_rows": 39124,
+            "last_train_index": 39123,
+            "seconds": 6.60999999998603
+          },
+          {
+            "prediction_start_index": 39316,
+            "prediction_end_exclusive": 39484,
+            "train_rows": 39292,
+            "last_train_index": 39291,
+            "seconds": 6.545999999972992
+          },
+          {
+            "prediction_start_index": 39484,
+            "prediction_end_exclusive": 39652,
+            "train_rows": 39460,
+            "last_train_index": 39459,
+            "seconds": 6.235000000044238
+          },
+          {
+            "prediction_start_index": 39652,
+            "prediction_end_exclusive": 39820,
+            "train_rows": 39628,
+            "last_train_index": 39627,
+            "seconds": 6.671999999962281
+          },
+          {
+            "prediction_start_index": 39820,
+            "prediction_end_exclusive": 39988,
+            "train_rows": 39796,
+            "last_train_index": 39795,
+            "seconds": 6.64000000001397
+          },
+          {
+            "prediction_start_index": 39988,
+            "prediction_end_exclusive": 40156,
+            "train_rows": 39964,
+            "last_train_index": 39963,
+            "seconds": 6.797000000020489
+          },
+          {
+            "prediction_start_index": 40156,
+            "prediction_end_exclusive": 40324,
+            "train_rows": 40132,
+            "last_train_index": 40131,
+            "seconds": 6.7189999999827705
+          },
+          {
+            "prediction_start_index": 40324,
+            "prediction_end_exclusive": 40492,
+            "train_rows": 40300,
+            "last_train_index": 40299,
+            "seconds": 6.842999999993481
+          },
+          {
+            "prediction_start_index": 40492,
+            "prediction_end_exclusive": 40660,
+            "train_rows": 40468,
+            "last_train_index": 40467,
+            "seconds": 6.532000000006519
+          },
+          {
+            "prediction_start_index": 40660,
+            "prediction_end_exclusive": 40828,
+            "train_rows": 40636,
+            "last_train_index": 40635,
+            "seconds": 6.436999999976251
+          },
+          {
+            "prediction_start_index": 40828,
+            "prediction_end_exclusive": 40996,
+            "train_rows": 40804,
+            "last_train_index": 40803,
+            "seconds": 6.35899999999674
+          },
+          {
+            "prediction_start_index": 40996,
+            "prediction_end_exclusive": 41164,
+            "train_rows": 40972,
+            "last_train_index": 40971,
+            "seconds": 6.0310000000172295
+          },
+          {
+            "prediction_start_index": 41164,
+            "prediction_end_exclusive": 41332,
+            "train_rows": 41140,
+            "last_train_index": 41139,
+            "seconds": 6.327999999979511
+          },
+          {
+            "prediction_start_index": 41332,
+            "prediction_end_exclusive": 41500,
+            "train_rows": 41308,
+            "last_train_index": 41307,
+            "seconds": 6.547000000020489
+          },
+          {
+            "prediction_start_index": 41500,
+            "prediction_end_exclusive": 41668,
+            "train_rows": 41476,
+            "last_train_index": 41475,
+            "seconds": 6.26600000000326
+          },
+          {
+            "prediction_start_index": 41668,
+            "prediction_end_exclusive": 41836,
+            "train_rows": 41644,
+            "last_train_index": 41643,
+            "seconds": 6.202999999979511
+          },
+          {
+            "prediction_start_index": 41836,
+            "prediction_end_exclusive": 42004,
+            "train_rows": 41812,
+            "last_train_index": 41811,
+            "seconds": 6.26500000001397
+          },
+          {
+            "prediction_start_index": 42004,
+            "prediction_end_exclusive": 42172,
+            "train_rows": 41980,
+            "last_train_index": 41979,
+            "seconds": 6.26600000000326
+          },
+          {
+            "prediction_start_index": 42172,
+            "prediction_end_exclusive": 42340,
+            "train_rows": 42148,
+            "last_train_index": 42147,
+            "seconds": 6.4060000000172295
+          },
+          {
+            "prediction_start_index": 42340,
+            "prediction_end_exclusive": 42508,
+            "train_rows": 42316,
+            "last_train_index": 42315,
+            "seconds": 6.327999999979511
+          },
+          {
+            "prediction_start_index": 42508,
+            "prediction_end_exclusive": 42676,
+            "train_rows": 42484,
+            "last_train_index": 42483,
+            "seconds": 6.172000000020489
+          },
+          {
+            "prediction_start_index": 42676,
+            "prediction_end_exclusive": 42844,
+            "train_rows": 42652,
+            "last_train_index": 42651,
+            "seconds": 6.14100000000326
+          },
+          {
+            "prediction_start_index": 42844,
+            "prediction_end_exclusive": 43012,
+            "train_rows": 42820,
+            "last_train_index": 42819,
+            "seconds": 6.39000000001397
+          },
+          {
+            "prediction_start_index": 43012,
+            "prediction_end_exclusive": 43180,
+            "train_rows": 42988,
+            "last_train_index": 42987,
+            "seconds": 6.297000000020489
+          },
+          {
+            "prediction_start_index": 43180,
+            "prediction_end_exclusive": 43348,
+            "train_rows": 43156,
+            "last_train_index": 43155,
+            "seconds": 6.0939999999827705
+          },
+          {
+            "prediction_start_index": 43348,
+            "prediction_end_exclusive": 43516,
+            "train_rows": 43324,
+            "last_train_index": 43323,
+            "seconds": 6.172000000020489
+          },
+          {
+            "prediction_start_index": 43516,
+            "prediction_end_exclusive": 43684,
+            "train_rows": 43492,
+            "last_train_index": 43491,
+            "seconds": 6.077999999979511
+          },
+          {
+            "prediction_start_index": 43684,
+            "prediction_end_exclusive": 43756,
+            "train_rows": 43660,
+            "last_train_index": 43659,
+            "seconds": 5.922000000020489
+          }
+        ]
+      },
+      "training_count_per_seed": 72,
+      "auc_by_seed": {
+        "42": 0.5283882726130089,
+        "43": 0.5349622997632026,
+        "44": 0.5315530716156003
+      },
+      "pooled_mean_auc": 0.5316345479972706,
+      "segment_mean_auc": [
+        0.5328558381263613,
+        0.533244073906572,
+        0.5285028557980922
+      ],
+      "epsilon": 0.006574027150193729,
+      "first_train_rows": 31732,
+      "last_train_rows": 43660
+    }
+  },
+  "comparisons": {
+    "R4000": {
+      "delta_auc": 0.00166594566829259,
+      "segment_deltas": [
+        0.0,
+        0.00865985608323705,
+        -0.002234046693271763
+      ],
+      "epsilon": 0.004633124160920765,
+      "bootstrap": {
+        "block_length": 48,
+        "replicates": 2000,
+        "seed": 20260929,
+        "raw_one_sided_p_value": 0.21639180409795103,
+        "unadjusted_95_percent_two_sided_ci": [
+          -0.003257246185523464,
+          0.008020990962019098
+        ],
+        "rank": 1,
+        "holm_alpha": 0.016666666666666666,
+        "adjusted_p_value": 0.6491754122938531
+      },
+      "criteria": {
+        "all_changed_segments_positive": false,
+        "holm_significant": false,
+        "above_seed_noise": false
+      },
+      "decision": "沒有證據顯示該重新訓練頻率比固定模型好",
+      "possibly_weaker": false
+    },
+    "R1000": {
+      "delta_auc": 0.002138375326684594,
+      "segment_deltas": [
+        -0.0006098623453563157,
+        0.010883091651206045,
+        -0.0042685096041467085
+      ],
+      "epsilon": 0.004308028952879517,
+      "bootstrap": {
+        "block_length": 48,
+        "replicates": 2000,
+        "seed": 20260929,
+        "raw_one_sided_p_value": 0.23888055972013994,
+        "unadjusted_95_percent_two_sided_ci": [
+          -0.0042577698189490455,
+          0.009148562286517553
+        ],
+        "rank": 2,
+        "holm_alpha": 0.025,
+        "adjusted_p_value": 0.6491754122938531
+      },
+      "criteria": {
+        "all_changed_segments_positive": false,
+        "holm_significant": false,
+        "above_seed_noise": false
+      },
+      "decision": "沒有證據顯示該重新訓練頻率比固定模型好",
+      "possibly_weaker": false
+    },
+    "R168": {
+      "delta_auc": 0.001315327738282135,
+      "segment_deltas": [
+        -0.002867091921354814,
+        0.006489662831703047,
+        8.250018562416805e-06
+      ],
+      "epsilon": 0.006574027150193729,
+      "bootstrap": {
+        "block_length": 48,
+        "replicates": 2000,
+        "seed": 20260929,
+        "raw_one_sided_p_value": 0.2978510744627686,
+        "unadjusted_95_percent_two_sided_ci": [
+          -0.005219548018024547,
+          0.008927965945781048
+        ],
+        "rank": 3,
+        "holm_alpha": 0.05,
+        "adjusted_p_value": 0.6491754122938531
+      },
+      "criteria": {
+        "all_changed_segments_positive": false,
+        "holm_significant": false,
+        "above_seed_noise": false
+      },
+      "decision": "沒有證據顯示該重新訓練頻率比固定模型好",
+      "possibly_weaker": false
+    }
+  },
+  "fixed_decay_curve": [
+    {
+      "interval": 0,
+      "auc": 0.5416501634320326
+    },
+    {
+      "interval": 1,
+      "auc": 0.503653988363401
+    },
+    {
+      "interval": 2,
+      "auc": 0.5702869591930639
+    },
+    {
+      "interval": 3,
+      "auc": 0.5329972031405955
+    },
+    {
+      "interval": 4,
+      "auc": 0.531692211673488
+    },
+    {
+      "interval": 5,
+      "auc": 0.5524446349135146
+    },
+    {
+      "interval": 6,
+      "auc": 0.5115199514440559
+    },
+    {
+      "interval": 7,
+      "auc": 0.5205633780229649
+    },
+    {
+      "interval": 8,
+      "auc": 0.5082918606946067
+    },
+    {
+      "interval": 9,
+      "auc": 0.5517094205189147
+    },
+    {
+      "interval": 10,
+      "auc": 0.5222060451460749
+    },
+    {
+      "interval": 11,
+      "auc": 0.5359959998502617
+    }
+  ],
+  "segment_up_rates": [
+    0.52175,
+    0.49825,
+    0.49925
+  ],
+  "runtime_seconds": 1534.6410000000033
+}

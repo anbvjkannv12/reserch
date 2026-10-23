@@ -1,0 +1,626 @@
+{
+  "task": "ETH 4h three-class target comparison",
+  "symbol": "ETH",
+  "git_revision": "d99dccca7c6117a4e18e48f72c27f587b79c2236",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "xgboost_version": "3.2.0",
+  "input_sha256": "354243e05237f0d65cbb4bf0874acd273293dc1aba21ab6e9642f523e8a4838c",
+  "settings": {
+    "k": 0.002,
+    "cost": 0.002,
+    "coverage": 0.2,
+    "purge_rows": 24,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261001,
+    "block_length": 48
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_rows": 19612,
+      "validation_rows": 4000,
+      "test_rows": 4000,
+      "train_start": "2021-08-10T11:00:00+00:00",
+      "train_end": "2023-11-07T06:00:00+00:00",
+      "validation_start": "2023-11-08T07:00:00+00:00",
+      "validation_end": "2024-04-22T22:00:00+00:00",
+      "test_start": "2024-04-23T23:00:00+00:00",
+      "test_end": "2024-10-07T14:00:00+00:00"
+    },
+    {
+      "fold": 1,
+      "train_rows": 27660,
+      "validation_rows": 4000,
+      "test_rows": 4000,
+      "train_start": "2021-08-10T11:00:00+00:00",
+      "train_end": "2024-10-07T14:00:00+00:00",
+      "validation_start": "2024-10-08T15:00:00+00:00",
+      "validation_end": "2025-03-24T06:00:00+00:00",
+      "test_start": "2025-03-25T07:00:00+00:00",
+      "test_end": "2025-09-07T22:00:00+00:00"
+    },
+    {
+      "fold": 2,
+      "train_rows": 35708,
+      "validation_rows": 4000,
+      "test_rows": 4000,
+      "train_start": "2021-08-10T11:00:00+00:00",
+      "train_end": "2025-09-07T22:00:00+00:00",
+      "validation_start": "2025-09-08T23:00:00+00:00",
+      "validation_end": "2026-02-22T14:00:00+00:00",
+      "test_start": "2026-02-23T15:00:00+00:00",
+      "test_end": "2026-08-09T06:00:00+00:00"
+    }
+  ],
+  "class_proportions": {
+    "0": {
+      "train": {
+        "down": 0.38496838670201916,
+        "neutral": 0.2250152967570875,
+        "up": 0.3900163165408933
+      },
+      "validation": {
+        "down": 0.37625,
+        "neutral": 0.192,
+        "up": 0.43175
+      },
+      "test": {
+        "down": 0.398,
+        "neutral": 0.2085,
+        "up": 0.3935
+      }
+    },
+    "1": {
+      "train": {
+        "down": 0.38575560375994217,
+        "neutral": 0.21767895878524945,
+        "up": 0.3965654374548084
+      },
+      "validation": {
+        "down": 0.416,
+        "neutral": 0.151,
+        "up": 0.433
+      },
+      "test": {
+        "down": 0.39925,
+        "neutral": 0.16,
+        "up": 0.44075
+      }
+    },
+    "2": {
+      "train": {
+        "down": 0.3908927971322953,
+        "neutral": 0.203623837795452,
+        "up": 0.40548336507225274
+      },
+      "validation": {
+        "down": 0.4005,
+        "neutral": 0.20075,
+        "up": 0.39875
+      },
+      "test": {
+        "down": 0.37975,
+        "neutral": 0.2405,
+        "up": 0.37975
+      }
+    }
+  },
+  "arms": {
+    "T": {
+      "seeds": {
+        "42": {
+          "trade_count": 2425,
+          "test_trade_ratio": 0.20208333333333334,
+          "mean_net_return": -0.0016781347032339665,
+          "mean_net_return_percent": -0.16767274225051504,
+          "hit_rate": 0.5451546391752577,
+          "large_move_rate": 0.8103092783505155,
+          "fold_mean_net_returns": [
+            -0.0015351148216521753,
+            -0.0018326764956736314,
+            -0.0017225520281758133
+          ],
+          "direction_auc": 0.5323997697071312,
+          "coverage_curve": [
+            {
+              "q": 0.05,
+              "threshold": 0.2206244871020316,
+              "trade_count": 621,
+              "trade_ratio": 0.05175,
+              "mean_net_return": -0.0030813328115764406,
+              "hit_rate": 0.48792270531400966
+            },
+            {
+              "q": 0.1,
+              "threshold": 0.18420882225036625,
+              "trade_count": 1189,
+              "trade_ratio": 0.09908333333333333,
+              "mean_net_return": -0.002302476032853577,
+              "hit_rate": 0.5407905803195963
+            },
+            {
+              "q": 0.2,
+              "threshold": 0.1422208309173584,
+              "trade_count": 2469,
+              "trade_ratio": 0.20575,
+              "mean_net_return": -0.0016713977154488781,
+              "hit_rate": 0.5439449169704333
+            },
+            {
+              "q": 0.3,
+              "threshold": 0.11515341103076931,
+              "trade_count": 3609,
+              "trade_ratio": 0.30075,
+              "mean_net_return": -0.0018047174641998552,
+              "hit_rate": 0.5394846217788861
+            },
+            {
+              "q": 0.5,
+              "threshold": 0.07587727904319763,
+              "trade_count": 5935,
+              "trade_ratio": 0.4945833333333333,
+              "mean_net_return": -0.001737765162750288,
+              "hit_rate": 0.5356360572872788
+            },
+            {
+              "q": 1.0,
+              "threshold": 3.5136938095092773e-05,
+              "trade_count": 11997,
+              "trade_ratio": 0.99975,
+              "mean_net_return": -0.0018424760432936894,
+              "hit_rate": 0.5260481787113445
+            }
+          ]
+        },
+        "43": {
+          "trade_count": 2378,
+          "test_trade_ratio": 0.19816666666666666,
+          "mean_net_return": -0.0015636062757814842,
+          "mean_net_return_percent": -0.15623844803739417,
+          "hit_rate": 0.535744322960471,
+          "large_move_rate": 0.8061396131202692,
+          "fold_mean_net_returns": [
+            -0.0014446238759542017,
+            -0.0016145738638883374,
+            -0.001649146581118689
+          ],
+          "direction_auc": 0.5264538570832948,
+          "coverage_curve": [
+            {
+              "q": 0.05,
+              "threshold": 0.21757092475891107,
+              "trade_count": 567,
+              "trade_ratio": 0.04725,
+              "mean_net_return": -0.0022216844681366976,
+              "hit_rate": 0.5061728395061729
+            },
+            {
+              "q": 0.1,
+              "threshold": 0.18074690103530885,
+              "trade_count": 1191,
+              "trade_ratio": 0.09925,
+              "mean_net_return": -0.0014450923365368397,
+              "hit_rate": 0.5222502099076406
+            },
+            {
+              "q": 0.2,
+              "threshold": 0.14182401895523072,
+              "trade_count": 2347,
+              "trade_ratio": 0.19558333333333333,
+              "mean_net_return": -0.00168254638956132,
+              "hit_rate": 0.5304644226672348
+            },
+            {
+              "q": 0.3,
+              "threshold": 0.11397902965545652,
+              "trade_count": 3574,
+              "trade_ratio": 0.29783333333333334,
+              "mean_net_return": -0.001729234576346896,
+              "hit_rate": 0.534135422495803
+            },
+            {
+              "q": 0.5,
+              "threshold": 0.07516644895076752,
+              "trade_count": 5923,
+              "trade_ratio": 0.4935833333333333,
+              "mean_net_return": -0.0018623477070960229,
+              "hit_rate": 0.5291237548539591
+            },
+            {
+              "q": 1.0,
+              "threshold": 7.271766662597656e-06,
+              "trade_count": 12000,
+              "trade_ratio": 1.0,
+              "mean_net_return": -0.0018018674546994354,
+              "hit_rate": 0.5200833333333333
+            }
+          ]
+        },
+        "44": {
+          "trade_count": 2503,
+          "test_trade_ratio": 0.20858333333333334,
+          "mean_net_return": -0.0020411987158326923,
+          "mean_net_return_percent": -0.2039116886450664,
+          "hit_rate": 0.5393527766679984,
+          "large_move_rate": 0.7986416300439473,
+          "fold_mean_net_returns": [
+            -0.0018660732901953686,
+            -0.002586196151212497,
+            -0.0017848175625636007
+          ],
+          "direction_auc": 0.5276114749055894,
+          "coverage_curve": [
+            {
+              "q": 0.05,
+              "threshold": 0.21817323863506313,
+              "trade_count": 657,
+              "trade_ratio": 0.05475,
+              "mean_net_return": -0.0024018189011645414,
+              "hit_rate": 0.4946727549467275
+            },
+            {
+              "q": 0.1,
+              "threshold": 0.1819387137889862,
+              "trade_count": 1327,
+              "trade_ratio": 0.11058333333333334,
+              "mean_net_return": -0.0022653177984890563,
+              "hit_rate": 0.5222305953278071
+            },
+            {
+              "q": 0.2,
+              "threshold": 0.14273507595062257,
+              "trade_count": 2501,
+              "trade_ratio": 0.20841666666666667,
+              "mean_net_return": -0.0020426511029751782,
+              "hit_rate": 0.5381847261095561
+            },
+            {
+              "q": 0.3,
+              "threshold": 0.11648258566856383,
+              "trade_count": 3666,
+              "trade_ratio": 0.3055,
+              "mean_net_return": -0.0018744065880067211,
+              "hit_rate": 0.5335515548281505
+            },
+            {
+              "q": 0.5,
+              "threshold": 0.07662294805049896,
+              "trade_count": 6011,
+              "trade_ratio": 0.5009166666666667,
+              "mean_net_return": -0.001817179190494789,
+              "hit_rate": 0.529030111462319
+            },
+            {
+              "q": 1.0,
+              "threshold": 4.798173904418945e-06,
+              "trade_count": 11999,
+              "trade_ratio": 0.9999166666666667,
+              "mean_net_return": -0.0019872632248054485,
+              "hit_rate": 0.5187098924910409
+            }
+          ]
+        }
+      }
+    },
+    "B": {
+      "seeds": {
+        "42": {
+          "trade_count": 2393,
+          "test_trade_ratio": 0.19941666666666666,
+          "mean_net_return": -0.002154609938801158,
+          "mean_net_return_percent": -0.21522904329827974,
+          "hit_rate": 0.530296698704555,
+          "large_move_rate": 0.7918930213121604,
+          "fold_mean_net_returns": [
+            -0.001876716989386062,
+            -0.002707040734649507,
+            -0.0019668961075636586
+          ],
+          "direction_auc": 0.5240743780181212,
+          "coverage_curve": [
+            {
+              "q": 0.05,
+              "threshold": 0.13634815514087675,
+              "trade_count": 664,
+              "trade_ratio": 0.05533333333333333,
+              "mean_net_return": -0.002363449524581102,
+              "hit_rate": 0.5075301204819277
+            },
+            {
+              "q": 0.1,
+              "threshold": 0.11409313678741455,
+              "trade_count": 1230,
+              "trade_ratio": 0.1025,
+              "mean_net_return": -0.0021777828827979164,
+              "hit_rate": 0.5317073170731708
+            },
+            {
+              "q": 0.2,
+              "threshold": 0.0883523464202881,
+              "trade_count": 2425,
+              "trade_ratio": 0.20208333333333334,
+              "mean_net_return": -0.0021191229450254643,
+              "hit_rate": 0.5315463917525773
+            },
+            {
+              "q": 0.3,
+              "threshold": 0.07116112411022185,
+              "trade_count": 3632,
+              "trade_ratio": 0.30266666666666664,
+              "mean_net_return": -0.0019270642424087756,
+              "hit_rate": 0.5355176211453745
+            },
+            {
+              "q": 0.5,
+              "threshold": 0.0460188090801239,
+              "trade_count": 6115,
+              "trade_ratio": 0.5095833333333334,
+              "mean_net_return": -0.0019179885069199496,
+              "hit_rate": 0.52886345053148
+            },
+            {
+              "q": 1.0,
+              "threshold": 2.586841583251953e-05,
+              "trade_count": 11998,
+              "trade_ratio": 0.9998333333333334,
+              "mean_net_return": -0.0020454797113765317,
+              "hit_rate": 0.5159193198866477
+            }
+          ]
+        },
+        "43": {
+          "trade_count": 2584,
+          "test_trade_ratio": 0.21533333333333332,
+          "mean_net_return": -0.001998963565051697,
+          "mean_net_return_percent": -0.19969669679810123,
+          "hit_rate": 0.5278637770897833,
+          "large_move_rate": 0.7925696594427245,
+          "fold_mean_net_returns": [
+            -0.0020613605814480563,
+            -0.0023232888123994365,
+            -0.0016220842668688638
+          ],
+          "direction_auc": 0.5233522125184021,
+          "coverage_curve": [
+            {
+              "q": 0.05,
+              "threshold": 0.13380684703588483,
+              "trade_count": 724,
+              "trade_ratio": 0.060333333333333336,
+              "mean_net_return": -0.0026322551758026897,
+              "hit_rate": 0.5041436464088398
+            },
+            {
+              "q": 0.1,
+              "threshold": 0.10949732363224031,
+              "trade_count": 1417,
+              "trade_ratio": 0.11808333333333333,
+              "mean_net_return": -0.0021403322374655685,
+              "hit_rate": 0.5208186309103741
+            },
+            {
+              "q": 0.2,
+              "threshold": 0.08552422523498535,
+              "trade_count": 2593,
+              "trade_ratio": 0.21608333333333332,
+              "mean_net_return": -0.00184299480229991,
+              "hit_rate": 0.5314307751639028
+            },
+            {
+              "q": 0.3,
+              "threshold": 0.06858917772769928,
+              "trade_count": 3873,
+              "trade_ratio": 0.32275,
+              "mean_net_return": -0.0018621075806118607,
+              "hit_rate": 0.5293054479731474
+            },
+            {
+              "q": 0.5,
+              "threshold": 0.04441814124584198,
+              "trade_count": 6203,
+              "trade_ratio": 0.5169166666666667,
+              "mean_net_return": -0.0019520623998815043,
+              "hit_rate": 0.5210382073190392
+            },
+            {
+              "q": 1.0,
+              "threshold": 1.3113021850585938e-06,
+              "trade_count": 12000,
+              "trade_ratio": 1.0,
+              "mean_net_return": -0.001995532612841406,
+              "hit_rate": 0.5175833333333333
+            }
+          ]
+        },
+        "44": {
+          "trade_count": 2569,
+          "test_trade_ratio": 0.21408333333333332,
+          "mean_net_return": -0.0019295076971222402,
+          "mean_net_return_percent": -0.19276473938278166,
+          "hit_rate": 0.5313351498637602,
+          "large_move_rate": 0.7839626313740755,
+          "fold_mean_net_returns": [
+            -0.0018961474653898427,
+            -0.0018681282762806303,
+            -0.002018226210441569
+          ],
+          "direction_auc": 0.52535876026339,
+          "coverage_curve": [
+            {
+              "q": 0.05,
+              "threshold": 0.13187804818153376,
+              "trade_count": 698,
+              "trade_ratio": 0.058166666666666665,
+              "mean_net_return": -0.002273624926066095,
+              "hit_rate": 0.5214899713467048
+            },
+            {
+              "q": 0.1,
+              "threshold": 0.10960380733013156,
+              "trade_count": 1374,
+              "trade_ratio": 0.1145,
+              "mean_net_return": -0.001832146088160053,
+              "hit_rate": 0.5378457059679768
+            },
+            {
+              "q": 0.2,
+              "threshold": 0.08565046787261964,
+              "trade_count": 2568,
+              "trade_ratio": 0.214,
+              "mean_net_return": -0.0019183138157703198,
+              "hit_rate": 0.5299844236760125
+            },
+            {
+              "q": 0.3,
+              "threshold": 0.06938897073268888,
+              "trade_count": 3733,
+              "trade_ratio": 0.3110833333333333,
+              "mean_net_return": -0.001819504812393036,
+              "hit_rate": 0.5322796678274846
+            },
+            {
+              "q": 0.5,
+              "threshold": 0.04554519057273865,
+              "trade_count": 6205,
+              "trade_ratio": 0.5170833333333333,
+              "mean_net_return": -0.0018098371082141923,
+              "hit_rate": 0.5310233682514102
+            },
+            {
+              "q": 1.0,
+              "threshold": 1.2814998626708984e-05,
+              "trade_count": 12000,
+              "trade_ratio": 1.0,
+              "mean_net_return": -0.0018858293573570974,
+              "hit_rate": 0.5174166666666666
+            }
+          ]
+        }
+      }
+    },
+    "P": {
+      "trade_count": 2075,
+      "test_trade_ratio": 0.17291666666666666,
+      "mean_net_return": -0.0027595147397498285,
+      "mean_net_return_percent": -0.2755710778783652,
+      "hit_rate": 0.523855421686747,
+      "large_move_rate": 0.8433734939759037,
+      "fold_mean_net_returns": [
+        -0.0027961735064645416,
+        -0.0030692074861951657,
+        -0.002310600946720865
+      ],
+      "coverage_curve": [
+        {
+          "q": 0.05,
+          "threshold": 0.03003279018867968,
+          "trade_count": 467,
+          "trade_ratio": 0.03891666666666667,
+          "mean_net_return": -0.0020726630654981223,
+          "hit_rate": 0.5417558886509636
+        },
+        {
+          "q": 0.1,
+          "threshold": 0.02200777764813089,
+          "trade_count": 1004,
+          "trade_ratio": 0.08366666666666667,
+          "mean_net_return": -0.002983519034067917,
+          "hit_rate": 0.5258964143426295
+        },
+        {
+          "q": 0.2,
+          "threshold": 0.014725401689958124,
+          "trade_count": 2101,
+          "trade_ratio": 0.17508333333333334,
+          "mean_net_return": -0.0029576675067414042,
+          "hit_rate": 0.5221323179438363
+        },
+        {
+          "q": 0.3,
+          "threshold": 0.010857566241810725,
+          "trade_count": 3289,
+          "trade_ratio": 0.27408333333333335,
+          "mean_net_return": -0.0025657192925612328,
+          "hit_rate": 0.5159622985709942
+        },
+        {
+          "q": 0.5,
+          "threshold": 0.0063262388751949335,
+          "trade_count": 5578,
+          "trade_ratio": 0.4648333333333333,
+          "mean_net_return": -0.0024637256206934514,
+          "hit_rate": 0.5173897454284689
+        },
+        {
+          "q": 1.0,
+          "threshold": 7.35089072945172e-17,
+          "trade_count": 11998,
+          "trade_ratio": 0.9998333333333334,
+          "mean_net_return": -0.002169628058791117,
+          "hit_rate": 0.5158359726621103
+        }
+      ]
+    }
+  },
+  "primary": {
+    "m_T": -0.0017609798982827192,
+    "m_B": -0.0020276937336583703,
+    "delta": 0.00026671383537565105,
+    "fold_m_T": [
+      -0.0016152706626005868,
+      -0.0020111488369248275,
+      -0.0017188387239527065
+    ],
+    "fold_m_B": [
+      -0.0019447416787413245,
+      -0.0022994859411098636,
+      -0.0018690688616247026
+    ],
+    "fold_delta": [
+      0.00032947101614073764,
+      0.0002883371041850361,
+      0.0001502301376719961
+    ],
+    "signal_bootstrap": {
+      "raw_one_sided_p_value": 1.0,
+      "unadjusted_95_percent_two_sided_ci": [
+        -0.002494311151164384,
+        -0.0010346358715160996
+      ]
+    },
+    "comparison_bootstrap": {
+      "raw_one_sided_p_value": 0.10594702648675662,
+      "unadjusted_95_percent_two_sided_ci": [
+        -0.00012803846019870783,
+        0.0006754175798615984
+      ]
+    },
+    "epsilon_T": 0.00047759244005120814,
+    "epsilon_B": 0.0002251022416789178,
+    "epsilon": 0.00047759244005120814,
+    "valid_trade_counts": true
+  },
+  "runtime_seconds": 33.97395559999859,
+  "descriptive": {
+    "non_overlapping_m": {
+      "T": -0.0018342699078161002,
+      "B": -0.0018929541457371462,
+      "P": -0.0015769000097043096
+    },
+    "direction_auc_mean": {
+      "T": 0.5288217005653385,
+      "B": 0.5242617835999711
+    },
+    "binary_auc_consistency": {
+      "B_mean_auc": 0.5242617835999711,
+      "multi_horizon_4h_mean_auc": 0.5225960994452628,
+      "tolerance": 0.01
+    }
+  },
+  "analysis_revision": "v2 errata (docs/superpowers/specs/2026-09-28-three-class-target-v2-errata.md)"
+}

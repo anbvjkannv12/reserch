@@ -1,0 +1,83 @@
+{
+  "feature_count": 53,
+  "feature_names": [
+    "quote_asset_volume",
+    "number_of_trades",
+    "taker_buy_base",
+    "taker_buy_quote",
+    "log_return",
+    "range_pct",
+    "body_pct",
+    "upper_shadow_pct",
+    "lower_shadow_pct",
+    "atr_14_pct",
+    "log_volume",
+    "volume_change",
+    "trade_intensity",
+    "taker_buy_ratio",
+    "quote_volume_change",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "log_return_lag_1",
+    "volume_change_lag_1",
+    "taker_buy_ratio_lag_1",
+    "log_return_lag_2",
+    "volume_change_lag_2",
+    "taker_buy_ratio_lag_2",
+    "log_return_lag_3",
+    "volume_change_lag_3",
+    "taker_buy_ratio_lag_3",
+    "log_return_lag_6",
+    "volume_change_lag_6",
+    "taker_buy_ratio_lag_6",
+    "log_return_lag_12",
+    "volume_change_lag_12",
+    "taker_buy_ratio_lag_12",
+    "log_return_lag_24",
+    "volume_change_lag_24",
+    "taker_buy_ratio_lag_24",
+    "return_mean_6",
+    "return_std_6",
+    "volume_mean_6",
+    "range_mean_6",
+    "return_mean_12",
+    "return_std_12",
+    "volume_mean_12",
+    "range_mean_12",
+    "return_mean_24",
+    "return_std_24",
+    "volume_mean_24",
+    "range_mean_24",
+    "rsi_14",
+    "macd_pct",
+    "macd_signal_pct",
+    "bollinger_z_20"
+  ],
+  "label_definition": {
+    "classification": "target_up = future_log_return > 0",
+    "regression": "future_log_return = log(close[t+h] / close[t])"
+  },
+  "horizons_hours": [
+    4
+  ],
+  "leakage_controls": [
+    "Rows are sorted by UTC open_time before feature engineering.",
+    "Lag and rolling features use past observations only.",
+    "The target columns are excluded from feature_names.",
+    "is_imputed is retained for audit and excluded from feature_names."
+  ],
+  "datasets": [
+    {
+      "symbol": "ETH",
+      "horizon_hours": 4,
+      "input_file": "C:\\Users\\user\\專題 new (五年)\\data\\processed\\eth_5y.csv",
+      "output_file": "C:\\Users\\user\\專題 new (五年)\\data\\features\\revisions\\2026-09-10\\eth_4h.csv",
+      "row_count": 43796,
+      "imputed_row_count": 7,
+      "start_utc": "2021-08-10T11:00:00+00:00",
+      "end_utc": "2026-08-09T06:00:00+00:00"
+    }
+  ]
+}

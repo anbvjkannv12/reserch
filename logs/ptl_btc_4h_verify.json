@@ -1,0 +1,9 @@
+{
+  "windows": 4000,
+  "max_abs_diff_ptl_vs_training": 1.1920928955078125e-07,
+  "batch_vs_single": 0.0,
+  "tolerance": 1e-05,
+  "validation_auc": 0.5397799991049352,
+  "mobile_optimization": "none - optimize_for_mobile skipped because XNNPACK is unavailable",
+  "status": "PASS"
+}

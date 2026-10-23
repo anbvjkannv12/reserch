@@ -1,0 +1,122 @@
+{
+  "checks": {
+    "V1": {
+      "status": "PASS",
+      "errors": []
+    },
+    "V2": {
+      "status": "PASS",
+      "errors": []
+    },
+    "V3": {
+      "status": "PASS",
+      "errors": []
+    },
+    "V4": {
+      "status": "PASS",
+      "errors": []
+    },
+    "V5": {
+      "status": "PASS",
+      "errors": []
+    },
+    "V6": {
+      "status": "PASS",
+      "errors": []
+    },
+    "V7": {
+      "status": "PASS",
+      "errors": []
+    },
+    "V8": {
+      "status": "PASS",
+      "errors": []
+    }
+  },
+  "persistence_gap_affected_test_rows": {
+    "BTC-1h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "BTC-4h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "BTC-12h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "BTC-24h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "ETH-1h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "ETH-4h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "ETH-12h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "ETH-24h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "SOL-1h": {
+      "0": 0,
+      "1": 0,
+      "2": 1
+    },
+    "SOL-4h": {
+      "0": 0,
+      "1": 0,
+      "2": 4
+    },
+    "SOL-12h": {
+      "0": 0,
+      "1": 0,
+      "2": 12
+    },
+    "SOL-24h": {
+      "0": 0,
+      "1": 0,
+      "2": 24
+    },
+    "XRP-1h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "XRP-4h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "XRP-12h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "XRP-24h": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    }
+  },
+  "notes": [
+    "With 2000 resamples, minimum one-sided p is 1/2001; for 16 Holm tests it is 16/2001.",
+    "Five cells hit this floor: BTC 1h/4h, ETH 1h/12h, XRP 1h."
+  ]
+}

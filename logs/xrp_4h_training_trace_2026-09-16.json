@@ -1,0 +1,21 @@
+{
+  "task": "XRPUSDT 4h model comparison training trace",
+  "command": " .venv-transformer/Scripts/python.exe scripts/train_btc_4h_model_comparison.py --symbol XRP --data data/features/revisions/2026-09-16/xrp_4h.csv --manifest logs/sol_xrp_4h_feature_manifest_2026-09-16.json --output logs/xrp_4h_model_comparison_2026-09-16.json --initial-train-rows 19795 --validation-rows 4000 --test-rows 4000 --fold-count 3",
+  "files_sha256": {
+    "data/features/revisions/2026-09-16/xrp_4h.csv": "5f3deb9566b782027065c2c044c9fd89807497319658ff2adc05e17fffd0b84f",
+    "logs/sol_xrp_4h_feature_manifest_2026-09-16.json": "8d4673ebc6d2f5ab25b3cb979ef90c7c36a3575704e5220065b3df25ef7cae0f",
+    "logs/xrp_4h_model_comparison_2026-09-16.json": "9adf1c7646186f745a4a1aaafc5d6fea75c428dcdd4151e8012f33ef4021a57d"
+  },
+  "git_revision": "f475505435c05ec1a41a242382bbd352bea7bafb",
+  "git_status_short": "M README.md\n D README_5y_pipeline.md\n M agement.md\n M scripts/feature_engineering.py\n M scripts/train_btc_4h_baseline.py\n?? DATA_STRUCTURE.md\n?? docs/eth_4h_training_plan.md\n?? docs/external_features_ab_comparison.md\n?? docs/external_signals.md\n?? docs/sol_4h_training_plan.md\n?? docs/xrp_4h_training_plan.md\n?? runs/\n?? scripts/external_features.py\n?? scripts/fetch_external_signals.py\n?? scripts/score_news_sentiment.py\n?? tests/test_external_features.py\n?? \"\\350\\210\\212\\345\\260\\210\\351\\241\\214_3\\345\\271\\264\\350\\263\\207\\346\\226\\231/archive/\"",
+  "python_executable": "C:\\Users\\user\\專題\\.venv-transformer\\Scripts\\python.exe",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.0",
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0",
+    "torch": "2.14.0+cu126"
+  }
+}

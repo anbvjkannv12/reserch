@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-09-16T14:13:05.285554+00:00",
+  "purpose": "重跑前現況快照：logs/ 與 data/ 均未版控，覆蓋即不可還原",
+  "git_revision": "f475505435c05ec1a41a242382bbd352bea7bafb",
+  "files": {
+    "logs/btc_4h_model_comparison.json": {
+      "status": "present",
+      "bytes": 46153,
+      "sha256": "05AF2CE8509A4AD0D66E1C0B42413F77C080F03E946F92D9D4129E9032AD7867",
+      "fold_settings": {
+        "initial_train_rows": 19755,
+        "validation_rows": 4000,
+        "test_rows": 4000,
+        "fold_count": 3
+      },
+      "task": "BTCUSDT 4-hour walk-forward model comparison"
+    },
+    "logs/eth_4h_model_comparison.json": {
+      "status": "present",
+      "bytes": 46140,
+      "sha256": "4C9BD7E4CF3A61AD8C504B81B33B36E8A911D43817A62FF8DE8C3C0DAF67D1F0",
+      "fold_settings": {
+        "initial_train_rows": 19755,
+        "validation_rows": 4000,
+        "test_rows": 4000,
+        "fold_count": 3
+      },
+      "task": "ETHUSDT 4-hour walk-forward model comparison"
+    },
+    "logs/eth_4h_model_comparison_2026-09-10.json": {
+      "status": "present",
+      "bytes": 46155,
+      "sha256": "74F3220E542FF61EB561636667D36223031FE0285360DC8216E5B677DA248A91",
+      "fold_settings": {
+        "initial_train_rows": 19795,
+        "validation_rows": 4000,
+        "test_rows": 4000,
+        "fold_count": 3
+      },
+      "task": "ETHUSDT 4-hour walk-forward model comparison"
+    },
+    "logs/sol_4h_model_comparison.json": {
+      "status": "present",
+      "bytes": 46002,
+      "sha256": "B2DCCB69B3738FC99F530F5DF15E5631C9F17BD89D7FC730B5B24B347CA0F9E9",
+      "fold_settings": {
+        "initial_train_rows": 19755,
+        "validation_rows": 4000,
+        "test_rows": 4000,
+        "fold_count": 3
+      },
+      "task": "SOLUSDT 4-hour walk-forward model comparison"
+    },
+    "logs/sol_4h_model_comparison_2026-09-16.json": {
+      "status": "present",
+      "bytes": 46057,
+      "sha256": "30CF89792701831BBB1FB6C0F7DD37C9224126DFE17446061D4FE5B474612541",
+      "fold_settings": {
+        "initial_train_rows": 19795,
+        "validation_rows": 4000,
+        "test_rows": 4000,
+        "fold_count": 3
+      },
+      "task": "SOLUSDT 4-hour walk-forward model comparison"
+    },
+    "logs/xrp_4h_model_comparison.json": {
+      "status": "present",
+      "bytes": 45869,
+      "sha256": "AB0C93BF74DCE7D5DAC3C5873535A1CF57F7F5A40E08AC828F541CF2050A5AF0",
+      "fold_settings": {
+        "initial_train_rows": 19755,
+        "validation_rows": 4000,
+        "test_rows": 4000,
+        "fold_count": 3
+      },
+      "task": "XRPUSDT 4-hour walk-forward model comparison"
+    },
+    "logs/baseline_btc_4h.json": {
+      "status": "present",
+      "bytes": 7039,
+      "sha256": "1718FB60A94479F149A4F59687E501C397B4A80D59E551E829DE7D2AA4318664"
+    },
+    "logs/feature_manifest.json": {
+      "status": "present",
+      "bytes": 7029,
+      "sha256": "115A49A2C2A30920C17DCC981A7B1289A94D467BACD2BD0ACD07CC73410FB6F3"
+    },
+    "logs/eth_4h_feature_manifest_2026-09-10.json": {
+      "status": "present",
+      "bytes": 2241,
+      "sha256": "2FF2BA910EF87403A47652EEDA20D5625424B8FA0848C290D3566CF528E054BF"
+    },
+    "logs/sol_xrp_4h_feature_manifest_2026-09-16.json": {
+      "status": "present",
+      "bytes": 2611,
+      "sha256": "8D4673EBC6D2F5AB25B3CB979EF90C7C36A3575704E5220065B3DF25EF7CAE0F"
+    },
+    "logs/imputation_manifest.json": {
+      "status": "present",
+      "bytes": 3098,
+      "sha256": "0815E4E068A61CEEDE45E62C73A830CB14C65B18FB3C2177F3E388D8D6697C46"
+    },
+    "logs/data_quality_report.json": {
+      "status": "present",
+      "bytes": 8964,
+      "sha256": "7C328FA34BAB71C5F9A9044FB11C1922E602F0FC8DDD9E8060A29CF86D3CF3C8"
+    },
+    "logs/fetch_manifest.json": {
+      "status": "present",
+      "bytes": 3245,
+      "sha256": "53F0A687945BCA7EEE1BA16EAD6E04A2D16250BE1EB4EE3CC3FBD6011D7A452A"
+    },
+    "data/features/btc_4h.csv": {
+      "status": "present",
+      "bytes": 47985197,
+      "sha256": "860B5743ED98CD597ADE5F75EA5C681F6C18D0D2B631E7F3161F96110079EB7D"
+    },
+    "data/features/eth_4h.csv": {
+      "status": "present",
+      "bytes": 47732075,
+      "sha256": "354243E05237F0D65CBB4BF0874ACD273293DC1ABA21AB6E9642F523E8A4838C"
+    },
+    "data/features/sol_4h.csv": {
+      "status": "present",
+      "bytes": 47406693,
+      "sha256": "DDA37B08DBE595F3C50CA4D52250A1F43E7CE65FB5DE7D2E4CB753B94A7CBDB5"
+    },
+    "data/features/xrp_4h.csv": {
+      "status": "present",
+      "bytes": 47598410,
+      "sha256": "941124F3CD70863E4929C0D83F19C6A265D69D1C2124E361D048E6826A56C03B"
+    },
+    "data/features/revisions/2026-09-10/eth_4h.csv": {
+      "status": "present",
+      "bytes": 47772205,
+      "sha256": "D9FE91EB2ADD309F7EBE49E26B6460FDA429F1CEADA85E450BF192C01B730CBE"
+    },
+    "data/features/revisions/2026-09-16/sol_4h.csv": {
+      "status": "present",
+      "bytes": 47446585,
+      "sha256": "BB08A5BB237965B764E8F60E67DF5A4D8AF5E92C079114EAE1861AD1A91B9C9A"
+    },
+    "data/features/revisions/2026-09-16/xrp_4h.csv": {
+      "status": "present",
+      "bytes": 47638529,
+      "sha256": "5F3DEB9566B782027065C2C044C9FD89807497319658FF2ADC05E17FFFD0B84F"
+    }
+  }
+}
